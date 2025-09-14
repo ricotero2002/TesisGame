@@ -209,15 +209,17 @@ public class SessionManager : MonoBehaviour
     {
         Application.Quit(); // Solo funciona en una build, no en el editor
     }
-    public void StartSession(List<string> chosenGroupIds, int renderSeed)
+    public void StartSession(List<string> chosenGroupIds)
     {
         this.SessionId = System.Guid.NewGuid().ToString();
-        this.RenderSeed = renderSeed;
+        int seed = UnityEngine.Random.Range(int.MinValue, int.MaxValue);
+        this.RenderSeed = seed;
+        UnityEngine.Random.InitState(seed); // importante: hace reproducible UnityEngine.Random.value / Range / etc.
         this.ChosenGroupIds = chosenGroupIds ?? new List<string>();
         this.trials = new List<TrialLog>();
         this.SessionStartUtc = DateTime.UtcNow;
 
-        LogManager.Instance.AddMarkerLog("InicioPartida", $"StartSession {SessionId}", 0);
+        LogManager.Instance?.AddMarkerLog("InicioPartida", $"StartSession {SessionId} seed:{seed}", 0);
     }
 
     public void AddTrial(TrialLog t)
@@ -225,6 +227,7 @@ public class SessionManager : MonoBehaviour
         if (string.IsNullOrEmpty(t.session_id)) t.session_id = this.SessionId;
         if (string.IsNullOrEmpty(t.participant_id)) t.participant_id = this.user?.Username ?? "unknown";
         if (string.IsNullOrEmpty(t.timestamp)) t.timestamp = DateTime.UtcNow.ToString("o");
+        if (string.IsNullOrEmpty(t.phase)) t.phase = "Test";
         if (t.render_group == null) t.render_group = this.ChosenGroupIds.ToArray();
         if (t.render_seed == 0) t.render_seed = this.RenderSeed;
 
@@ -259,6 +262,7 @@ public class TrialLog
     public string phase;
     public string object_id;
     public string object_category;
+    public string object_subpool;
     public string object_similarity_label;
     public bool object_actual_moved;
     public bool participant_said_moved;
@@ -266,7 +270,7 @@ public class TrialLog
     public int reaction_time_ms;
     public int memorization_time_ms;
     public bool swap_event;
-    public SwapEntry[] swap_history;
+    public SwapEntry swap_history;
     public int render_seed;
     public string[] render_group;
 }
@@ -276,4 +280,5 @@ public class SwapEntry
 {
     public int from;
     public int to;
+    public SwapEntry(int from, int to) { this.from = from; this.to = to; }
 }

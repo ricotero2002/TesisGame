@@ -262,4 +262,139 @@ public static class DifficultySetsLoader
         if (maxSize == Vector3.zero) return Vector3.one;
         return maxSize;
     }
+
+    // Busca el subpoolId que mejor corresponde al chosenGroup.
+    // Strategy:
+    // 1) exact match (same size, same set of ids) within same pool (if poolHint provided) and difficultyHint preferred
+    // 2) exact match anywhere
+    // 3) set that contains all chosenGroup (subset) preferring same size/difficulty/pool
+    // 4) fallback null
+    public static string FindSubpoolIdForGroup(DifficultyRoot root, List<string> chosenGroup, string difficultyHint = null, string poolHint = null)
+    {
+        if (root == null || chosenGroup == null || chosenGroup.Count == 0) return null;
+
+        // normalize chosen set for comparisons
+        var chosenSet = new HashSet<string>(chosenGroup);
+
+        // helper to test equality disregarding order
+        Func<List<string>, bool> sameSet = (list) =>
+        {
+            if (list == null) return false;
+            if (list.Count != chosenSet.Count) return false;
+            return new HashSet<string>(list).SetEquals(chosenSet);
+        };
+
+        // First pass: exact matches, prefer same pool + difficulty
+        // 1.a pool + exact + difficulty
+        if (!string.IsNullOrEmpty(poolHint))
+        {
+            var cat = root.categories.FirstOrDefault(c => string.Equals(c.category, poolHint, StringComparison.OrdinalIgnoreCase));
+            if (cat != null)
+            {
+                foreach (var sp in cat.subpools ?? Enumerable.Empty<SubpoolDifficulty>())
+                {
+                    foreach (var s in sp.sets ?? Enumerable.Empty<DifficultySetEntry>())
+                    {
+                        if (!string.IsNullOrEmpty(difficultyHint) && !string.Equals(s.difficulty, difficultyHint, StringComparison.OrdinalIgnoreCase))
+                            continue;
+                        if (sameSet(s.group))
+                            return sp.subpoolId;
+                    }
+                }
+            }
+        }
+
+        // 1.b any category exact + difficulty
+        foreach (var cat in root.categories ?? Enumerable.Empty<CategoryDifficulty>())
+        {
+            foreach (var sp in cat.subpools ?? Enumerable.Empty<SubpoolDifficulty>())
+            {
+                foreach (var s in sp.sets ?? Enumerable.Empty<DifficultySetEntry>())
+                {
+                    if (!string.IsNullOrEmpty(difficultyHint) && !string.Equals(s.difficulty, difficultyHint, StringComparison.OrdinalIgnoreCase))
+                        continue;
+                    if (sameSet(s.group))
+                        return sp.subpoolId;
+                }
+            }
+        }
+
+        // 2) exact match ignoring difficulty (prefer pool if given)
+        if (!string.IsNullOrEmpty(poolHint))
+        {
+            var cat = root.categories.FirstOrDefault(c => string.Equals(c.category, poolHint, StringComparison.OrdinalIgnoreCase));
+            if (cat != null)
+            {
+                foreach (var sp in cat.subpools ?? Enumerable.Empty<SubpoolDifficulty>())
+                {
+                    foreach (var s in sp.sets ?? Enumerable.Empty<DifficultySetEntry>())
+                    {
+                        if (sameSet(s.group)) return sp.subpoolId;
+                    }
+                }
+            }
+        }
+        foreach (var cat in root.categories ?? Enumerable.Empty<CategoryDifficulty>())
+        {
+            foreach (var sp in cat.subpools ?? Enumerable.Empty<SubpoolDifficulty>())
+            {
+                foreach (var s in sp.sets ?? Enumerable.Empty<DifficultySetEntry>())
+                {
+                    if (sameSet(s.group)) return sp.subpoolId;
+                }
+            }
+        }
+
+        // 3) subset / contains: chosenGroup is subset of set.group (useful if group order differs or set contains extras)
+        // prefer same difficulty/pool if provided
+        // 3.a pool + difficulty
+        if (!string.IsNullOrEmpty(poolHint))
+        {
+            var cat = root.categories.FirstOrDefault(c => string.Equals(c.category, poolHint, StringComparison.OrdinalIgnoreCase));
+            if (cat != null)
+            {
+                foreach (var sp in cat.subpools ?? Enumerable.Empty<SubpoolDifficulty>())
+                {
+                    foreach (var s in sp.sets ?? Enumerable.Empty<DifficultySetEntry>())
+                    {
+                        if (!string.IsNullOrEmpty(difficultyHint) && !string.Equals(s.difficulty, difficultyHint, StringComparison.OrdinalIgnoreCase))
+                            continue;
+                        var setHash = new HashSet<string>(s.group ?? Enumerable.Empty<string>());
+                        if (chosenSet.IsSubsetOf(setHash)) return sp.subpoolId;
+                    }
+                }
+            }
+        }
+        // 3.b any category + difficulty
+        foreach (var cat in root.categories ?? Enumerable.Empty<CategoryDifficulty>())
+        {
+            foreach (var sp in cat.subpools ?? Enumerable.Empty<SubpoolDifficulty>())
+            {
+                foreach (var s in sp.sets ?? Enumerable.Empty<DifficultySetEntry>())
+                {
+                    if (!string.IsNullOrEmpty(difficultyHint) && !string.Equals(s.difficulty, difficultyHint, StringComparison.OrdinalIgnoreCase))
+                        continue;
+                    var setHash = new HashSet<string>(s.group ?? Enumerable.Empty<string>());
+                    if (chosenSet.IsSubsetOf(setHash)) return sp.subpoolId;
+                }
+            }
+        }
+
+        // 3.c any category any difficulty (subset)
+        foreach (var cat in root.categories ?? Enumerable.Empty<CategoryDifficulty>())
+        {
+            foreach (var sp in cat.subpools ?? Enumerable.Empty<SubpoolDifficulty>())
+            {
+                foreach (var s in sp.sets ?? Enumerable.Empty<DifficultySetEntry>())
+                {
+                    var setHash = new HashSet<string>(s.group ?? Enumerable.Empty<string>());
+                    if (chosenSet.IsSubsetOf(setHash)) return sp.subpoolId;
+                }
+            }
+        }
+
+        // not found
+        return null;
+    }
+
 }

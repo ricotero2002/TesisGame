@@ -37,11 +37,6 @@ public class InteractionUIController : MonoBehaviour
 
     private void OnAnswer(bool moved)
     {
-        // Registrar en la tile
-        currentTile.RegisterResult(moved, GameManagerFin.Instance.GetIndex(), pruebaEfecto);
-
-        panelPrefab.SetActive(false);
-        // Notificar al GameManager que puede continuar
-        GameManagerFin.Instance.OnUserAnswered();
+        GameManagerFin.Instance.HandlePlayerResponse(moved);
     }
 }

@@ -50,6 +50,9 @@ public class GameManagerFin : MonoBehaviour
 
     private float trialStartTime = 0f;
 
+    private TrialMeta trialMeta= new TrialMeta();
+
+    private List<string> chosenGroupSession;
 
     //elementos internos
 
@@ -177,7 +180,7 @@ public class GameManagerFin : MonoBehaviour
         // --------- NUEVO: elegir grupo (difficulty sets) con DifficultySetsLoader ----------
         List<string> chosenGroup = null;
         string chosenCategory = null;
-
+        string chosenSubpoolId = null;
         try
         {
             var dsRoot = DifficultySetsLoader.LoadFromFile(difficultySetsJsonPath);
@@ -238,6 +241,17 @@ public class GameManagerFin : MonoBehaviour
                     else
                         chosenCategory = preferredPool;
                 }
+                // dsRoot ya lo obtenido antes: var dsRoot = DifficultySetsLoader.LoadFromFile(difficultySetsJsonPath);
+                if (dsRoot != null && chosenGroup != null && chosenGroup.Count > 0)
+                {
+                    // difficultyStr lo definiste arriba (hard/easy)
+                    chosenSubpoolId = DifficultySetsLoader.FindSubpoolIdForGroup(dsRoot, chosenGroup, difficultyStr, chosenCategory);
+                    if (!string.IsNullOrEmpty(chosenSubpoolId))
+                        Debug.Log($"[GameManagerFin] Found subpool for chosen group: {chosenSubpoolId}");
+                    else
+                        Debug.Log("[GameManagerFin] No subpool found for chosenGroup (will fallback to null)");
+                }
+
             }
         }
         catch (Exception ex)
@@ -253,8 +267,13 @@ public class GameManagerFin : MonoBehaviour
         if (chosenGroup != null)
         {
             foreach (var oid in chosenGroup) _usedObjectIds.Add(oid);
+            this.chosenGroupSession = chosenGroup;
         }
 
+        trialMeta.object_category = chosenCategory;
+        trialMeta.object_subpool = chosenSubpoolId;
+        trialMeta.memorization_time_ms = timeToChangeParametro;
+        trialMeta.swap_event = (strategy is CommonMovementStrategy) ? false : true;
 
         // Lanzar InitCoroutine del RoomBuilder y esperar a que termine
         //aca deberia pasarle la lista de elementos a usar
@@ -309,7 +328,7 @@ public class GameManagerFin : MonoBehaviour
             timer = 0.0f;
         menuPausa.Habilitar();
         EnsureTitleOnlyInteractCanvas();
-
+        SessionManager.Instance.StartSession(this.chosenGroupSession);
     }
     //de aca para abajo arreglar
     void Update()
@@ -365,7 +384,10 @@ public class GameManagerFin : MonoBehaviour
 
 
             case State.UserChecking:
-                
+                if (trialStartTime <= 0f)
+                {
+                    trialStartTime = Time.realtimeSinceStartup; // start RT
+                }
                 //aca avisar que la estatua es valida para ser cliqueada
                 currentRoom.EnableEstatueLigth(currentIndex, true);
                 //espero a que el usuario lo clickee y diga si se movio o no (Falta acomodar)
@@ -390,8 +412,9 @@ public class GameManagerFin : MonoBehaviour
                 titleText.text = "Compleado, Volver al Hall";
                 ShowFinalOutlines();
                 currentRoom.AbleDoor();
-                currentRoom.GetResultados();
-                
+                SessionManager.Instance.EndSession();
+
+
                 menuPausa.Desabilitar(); // Desactivar el menú de pausa
                 state = State.Start; // Reiniciar el estado
 
@@ -648,7 +671,7 @@ public void OnPlayerEnterTile(TileController tc)
  
 
 
-    private void HandlePlayerResponse(bool guessedMoved)
+    public void HandlePlayerResponse(bool guessedMoved)
     {
 
         OnPlayerLeftTile(currentSelectedTile);
@@ -665,7 +688,6 @@ public void OnPlayerEnterTile(TileController tc)
             }
             Debug.Log("Desde GameManagerFin");
             float reactionMs = (trialStartTime > 0f) ? (Time.realtimeSinceStartup - trialStartTime) * 1000f : -1f;
-            trialStartTime = 0f;
 
             currentSelectedTile.RegisterResult(guessedMoved, indexToSend, pruebaEfecto, reactionMs);
         }
@@ -927,7 +949,6 @@ public void OnPlayerEnterTile(TileController tc)
         // 10) avanzar estado
         titleText.text = "Contestar";
         state = State.UserChecking;
-        trialStartTime = Time.realtimeSinceStartup;
 
     }
 
@@ -976,4 +997,18 @@ public void OnPlayerEnterTile(TileController tc)
     {
         return timeBetweenPhases;
     }
+
+    public TrialMeta GetTrialMeta()
+    {
+        return trialMeta;
+    }
+}
+
+[Serializable]
+public class TrialMeta
+{
+    public string object_category;
+    public string object_subpool;      // si no hay data, quedará null/empty
+    public float memorization_time_ms;
+    public bool swap_event;
 }

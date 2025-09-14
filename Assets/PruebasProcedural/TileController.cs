@@ -31,6 +31,8 @@ public class TileController : MonoBehaviour
     private static Vector3[] internalOffsets;   // n×n dentro de cada cuadrante
     private RoomInformation inf;
 
+    private SwapEntry swapEntry;
+
 
     // Evento para notificar al GameManager cuando el usuario clica esta tile
     public event Action<TileController> OnTileClicked;
@@ -152,7 +154,10 @@ public class TileController : MonoBehaviour
 
     }
 
-
+    public void SetSwapEntry(SwapEntry entry)
+    {
+        this.swapEntry = entry;
+    }
 
     // ---------- internal move helper ----------
     private void MoveToPosition(int newIndex, string moveType)
@@ -300,12 +305,11 @@ public class TileController : MonoBehaviour
 
         // Usuario seguro (fallback si SessionManager o user es null)
         string user = SessionManager.Instance?.user?.Username ?? "Guest";
-        string event_type = "RespuestaUsuario";
 
         // Texto legible
         string respuesta = guessedMoved ? "Se movio" : "No se movio";
         string movimientoEnum = similitud.ToString();               // Ninguno/Cerca/Lejos
-        string resultado = lastGuessCorrect.ToString();
+        string resultado = lastGuessCorrect? "Same" : "Different";
 
         // Nombre del arte (prefab/instancia)
         string artName = (artObject != null) ? artObject.name : "Unknown";
@@ -315,7 +319,25 @@ public class TileController : MonoBehaviour
         int o = PrevIndex;
         Vector3 worldPos = this.transform.position;
 
+
+
         // JSON-like para descripción (útil para logs)
+        TrialLog trial = new TrialLog();
+        trial.trial_index = posicion;
+        var objectid = artObject.GetComponent<ModelTag>();
+        trial.object_id = objectid.objectId;
+        trial.object_category=GameManagerFin.Instance.GetTrialMeta().object_category;
+        trial.object_subpool = GameManagerFin.Instance.GetTrialMeta().object_subpool;
+        trial.object_similarity_label = similitud.ToString();
+        trial.object_actual_moved = itMoved;
+        trial.participant_said_moved = guessedMoved;
+        trial.response = resultado;
+        trial.reaction_time_ms = (int)Mathf.Round(reactionMs);
+        trial.memorization_time_ms = (int)Mathf.Round(GameManagerFin.Instance.GetTrialMeta().memorization_time_ms);
+        trial.swap_event= GameManagerFin.Instance.GetTrialMeta().swap_event;
+        trial.swap_history= swapEntry;
+
+        /*
         string description = $"{{" +
             $"\"usuario\": \"{user}\", " +
             $"\"respuesta\": \"{respuesta}\", " +
@@ -326,13 +348,13 @@ public class TileController : MonoBehaviour
             $"\"PrevIndex\": {o}, " +
             $"\"artName\": \"{artName}\"" +
             $"}}";
+        */
+        SessionManager.Instance.AddTrial(trial);
 
-        string timestamp = DateTime.Now.ToString("o");
+        //Debug.Log($"[TileController.RegisterResult] {description}");
 
-        Debug.Log($"[TileController.RegisterResult] {description}");
-
-        LogData log = new LogData(user, event_type, description, timestamp, worldPos.x, worldPos.y, worldPos.z);
-        LogManager.Instance.AddLog(log);
+        //LogData log = new LogData(user, event_type, description, timestamp, worldPos.x, worldPos.y, worldPos.z);
+        //LogManager.Instance.AddLog(log);
 
         if (guessedMoved == true)
         {

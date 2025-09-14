@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
+using System.IO; // <-- agregar
 
 public class LogManager : MonoBehaviour
 {
@@ -47,8 +48,8 @@ public class LogManager : MonoBehaviour
     public void SendLogsAndWrapSession()
     {
         // Add start-of-game log
-        AddMarkerLog("InicioPartida", "Comienzo de la partida", 0);
-        AddMarkerLog("FinPartida", "Fin de la partida");
+        //AddMarkerLog("InicioPartida", "Comienzo de la partida", 0);
+        //AddMarkerLog("FinPartida", "Fin de la partida");
         // Send all logs
         StartCoroutine(SendAndWrap());
     }
@@ -73,7 +74,10 @@ public class LogManager : MonoBehaviour
             timestamp: timestamp,
             x: 0f, y: 0f, z: 0f
         );
-        logQueue.Insert(posicion, marker); // Insert at the beginning
+        if(posicion == -1)
+            logQueue.Add( marker); // Insert at the beginning
+        else
+            logQueue.Insert(posicion, marker); // Insert at the beginning
     }
     private void AddMarkerLog(string eventType, string description)
     {
@@ -85,7 +89,7 @@ public class LogManager : MonoBehaviour
             timestamp: timestamp,
             x: 0f, y: 0f, z: 0f
         );
-        logQueue.Add( marker); // Insert at the beginning
+        logQueue.Add( marker);
     }
     public void ClearLogs()
     {
@@ -97,8 +101,7 @@ public class LogManager : MonoBehaviour
     /// </summary>
     private IEnumerator SendLogsCoroutine()
     {
-        if (!GameFlowManager.Instance.IsOffline())
-        {
+
 
             // 1) Drain the queue
             // 1) Drain the queue
@@ -108,8 +111,16 @@ public class LogManager : MonoBehaviour
             if (batch.Count == 0)
                 yield break;
 
-            // Helper to build + send a request with a given token
-            IEnumerator SendBatch(string token, Action<bool> callback)
+        // Si estamos offline --> guardar localmente para pruebas y salir
+        if (GameFlowManager.Instance.IsOffline())
+        {
+            Debug.Log("[LogManager] Offline detected - saving logs locally for later inspection.");
+            SaveLogsLocally(batch);
+            yield break;
+        }
+
+        // Helper to build + send a request with a given token
+        IEnumerator SendBatch(string token, Action<bool> callback)
             {
                 var wrapper = new LogDataList { logs = batch.ToArray() };
                 string json = JsonUtility.ToJson(wrapper);
@@ -180,7 +191,7 @@ public class LogManager : MonoBehaviour
             Debug.LogError("[LogManager] Retry after refresh also failed - re-enqueuing logs");
             foreach (var l in batch)
                 logQueue.Add(l);
-        }
+        
     }
     public void EnqueueTrial(TrialLog trial)
     {
@@ -195,6 +206,92 @@ public class LogManager : MonoBehaviour
         );
         AddLog(marker);
     }
+
+
+
+    /// <summary>
+    /// Guarda un batch de logs en Application.persistentDataPath con timestamp.
+    /// Crea un archivo JSON separado por cada guardado: offline_logs_yyyyMMdd_HHmmss.json
+    /// </summary>
+    private void SaveLogsLocally(List<LogData> batch)
+    {
+        try
+        {
+            if (batch == null || batch.Count == 0) return;
+
+            var wrapper = new LogDataList { logs = batch.ToArray() };
+            string json = JsonUtility.ToJson(wrapper, true);
+
+            string folder = Path.Combine(Application.persistentDataPath, "offline_logs");
+            if (!Directory.Exists(folder)) Directory.CreateDirectory(folder);
+
+            string filename = $"offline_logs_{DateTime.UtcNow:yyyyMMdd_HHmmss}.json";
+            string fullPath = Path.Combine(folder, filename);
+
+            File.WriteAllText(fullPath, json, Encoding.UTF8);
+            Debug.Log($"[LogManager] Saved {batch.Count} logs locally to: {fullPath}");
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError("[LogManager] Error saving logs locally: " + ex.Message);
+        }
+    }
+
+    /// <summary>
+    /// Opcional: intenta reenviar archivos guardados localmente (llamar cuando vuelvas online).
+    /// </summary>
+    public IEnumerator SendSavedLogsIfAny()
+    {
+        string folder = Path.Combine(Application.persistentDataPath, "offline_logs");
+        if (!Directory.Exists(folder)) yield break;
+
+        var files = Directory.GetFiles(folder, "offline_logs_*.json").OrderBy(f => f).ToArray();
+        if (files.Length == 0) yield break;
+
+        foreach (var file in files)
+        {
+            string text = null;
+            try
+            {
+                text = File.ReadAllText(file, Encoding.UTF8);
+            }
+            catch (Exception ex)
+            {
+                Debug.LogWarning("[LogManager] Could not read saved log file: " + file + " -> " + ex.Message);
+                // skip this file
+                continue;
+            }
+
+            // Enviamos el contenido como payload (no hacemos parsing a objetos para simplicidad)
+            byte[] body = Encoding.UTF8.GetBytes(text);
+
+            using (var req = new UnityWebRequest(logsUrl, "POST"))
+            {
+                req.uploadHandler = new UploadHandlerRaw(body);
+                req.downloadHandler = new DownloadHandlerBuffer();
+                req.SetRequestHeader("Content-Type", "application/json");
+                string token = SessionManager.Instance.user?.AccessToken;
+                if (!string.IsNullOrEmpty(token)) req.SetRequestHeader("Authorization", "Bearer " + token);
+
+                yield return req.SendWebRequest();
+
+                bool ok = (req.result == UnityWebRequest.Result.Success) && (req.responseCode >= 200 && req.responseCode < 300);
+                if (ok)
+                {
+                    Debug.Log("[LogManager] Successfully resent saved logs: " + Path.GetFileName(file));
+                    // borrar archivo
+                    try { File.Delete(file); } catch { /* no crítico */ }
+                }
+                else
+                {
+                    Debug.LogWarning("[LogManager] Failed to resend saved logs: " + Path.GetFileName(file) + " responseCode:" + req.responseCode);
+                    // si falla, salimos para reintentar más tarde (no borramos el archivo)
+                    yield break;
+                }
+            }
+        }
+    }
+
 
 }
 

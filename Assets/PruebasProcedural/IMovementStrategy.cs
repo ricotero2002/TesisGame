@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
+using System;
 // IMovementStrategy.cs
 public interface IMovementStrategy
 {
@@ -56,7 +57,7 @@ public interface IMovementStrategy
         // Mezclar remaining para asignaciones aleatorias
         for (int i = 0; i < remaining.Count; i++)
         {
-            int r = Random.Range(i, remaining.Count);
+            int r = UnityEngine.Random.Range(i, remaining.Count);
             int tmp = remaining[i];
             remaining[i] = remaining[r];
             remaining[r] = tmp;
@@ -118,7 +119,7 @@ public class SwapMovementStrategy : IMovementStrategy
     public void Move(TileController[] tiles, Light[] ligth)
     {
         int n = tiles.Length;
-        var indices = Enumerable.Range(0, n).OrderBy(_ => Random.value).ToArray();
+        var indices = Enumerable.Range(0, n).OrderBy(_ => UnityEngine.Random.value).ToArray();
         var originalPositions = tiles.Select(t => t.transform.position).ToArray();
         int half = n / 2;
 
@@ -135,6 +136,19 @@ public class SwapMovementStrategy : IMovementStrategy
                 ? Quaternion.Euler(0, 180f, 0)
                 : tiles[i].transform.localRotation;
             tiles[i].MoveToPosition(newPos, rot);
+
+            // registrar swap: el tile que estaba en i ahora va a targetIdx
+            if (targetIdx != i)
+            {
+                try
+                {
+                    tiles[i].SetSwapEntry(new SwapEntry(i, targetIdx));
+                }
+                catch (Exception ex)
+                {
+                    Debug.LogWarning("[SwapMovement] No se pudo registrar swap: " + ex.Message);
+                }
+            }
 
             // Reordenar ambos arrays
             newTiles[targetIdx] = tiles[i];
