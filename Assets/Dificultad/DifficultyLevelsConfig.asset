@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8105e50152459b4e92a01001728c0d8, type: 3}
+  m_Name: DifficultyLevelsConfig
+  m_EditorClassIdentifier: 
+  levels:
+  - name: Level1
+    targetD: 0
+    numItems: 2
+    memoriseTimeMs: 10
+    swap: 0
+    poolSimilarityInt: 1
+    useManualParams: 1
+    categoria: Any
+  - name: Level2
+    targetD: 0.09090909
+    numItems: 2
+    memoriseTimeMs: 8
+    swap: 0
+    poolSimilarityInt: 0
+    useManualParams: 1
+    categoria: Any
+  - name: Level3
+    targetD: 0.18181819
+    numItems: 4
+    memoriseTimeMs: 8
+    swap: 0
+    poolSimilarityInt: 1
+    useManualParams: 1
+    categoria: Any
+  - name: Level4
+    targetD: 0.27272728
+    numItems: 4
+    memoriseTimeMs: 7
+    swap: 0
+    poolSimilarityInt: 0
+    useManualParams: 1
+    categoria: Any
+  - name: Level5
+    targetD: 0.36363637
+    numItems: 6
+    memoriseTimeMs: 7
+    swap: 0
+    poolSimilarityInt: 1
+    useManualParams: 1
+    categoria: Any
+  - name: Level6
+    targetD: 0.45454547
+    numItems: 6
+    memoriseTimeMs: 6
+    swap: 1
+    poolSimilarityInt: 0
+    useManualParams: 1
+    categoria: Any
+  - name: Level7
+    targetD: 0.54545456
+    numItems: 8
+    memoriseTimeMs: 6
+    swap: 0
+    poolSimilarityInt: 1
+    useManualParams: 1
+    categoria: Any
+  - name: Level8
+    targetD: 0.6363636
+    numItems: 8
+    memoriseTimeMs: 5
+    swap: 1
+    poolSimilarityInt: 0
+    useManualParams: 1
+    categoria: Any
+  - name: Level9
+    targetD: 0.72727275
+    numItems: 10
+    memoriseTimeMs: 5
+    swap: 0
+    poolSimilarityInt: 0
+    useManualParams: 1
+    categoria: Any
+  - name: Level10
+    targetD: 0.8181818
+    numItems: 10
+    memoriseTimeMs: 5
+    swap: 1
+    poolSimilarityInt: 1
+    useManualParams: 1
+    categoria: Any
+  - name: Level11
+    targetD: 0.90909094
+    numItems: 12
+    memoriseTimeMs: 5
+    swap: 0
+    poolSimilarityInt: 0
+    useManualParams: 1
+    categoria: Any
+  - name: Level12
+    targetD: 1
+    numItems: 12
+    memoriseTimeMs: 4
+    swap: 1
+    poolSimilarityInt: 0
+    useManualParams: 1
+    categoria: Any
+  - name: Especial Para Probar
+    targetD: 1.11
+    numItems: 8
+    memoriseTimeMs: 2
+    swap: 0
+    poolSimilarityInt: 0
+    useManualParams: 1
+    categoria: Estatuas
+  autoAssignTargetD: 0

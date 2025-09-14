@@ -1,0 +1,36 @@
+# Ignorar carpetas de Unity
+Library/
+Temp/
+Logs/
+obj/
+Packages/
+ProjectSettings/
+UserSettings/
+PruebasIa/
+# Ignorar carpetas de Assets (proyecto tuyo)
+Assets/Adaptive Performance/
+Assets/AnimControllers/
+Assets/Fonts/
+Assets/FPSFont/
+Assets/Images/
+Assets/ImportedAssets/
+Assets/Incoming/
+Assets/Interaccion/
+Assets/Luces/
+Assets/Materials/
+Assets/Metadata/
+Assets/PoolItems/
+Assets/PoolMateriales/
+Assets/Pools/
+Assets/Prefabs/
+Assets/PrefabsGenerales/
+Assets/Renderer/
+Assets/Resources/
+Assets/Scenes/
+Assets/Settings/
+Assets/TextMesh Pro/
+Assets/Textures/
+Assets/TutorialInfo/
+Assets/YaImportados/
+
+.vsconfig

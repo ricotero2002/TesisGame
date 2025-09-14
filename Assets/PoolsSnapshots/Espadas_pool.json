@@ -1,0 +1,24 @@
+{
+    "poolName": "Espadas",
+    "subpools": [
+        {
+            "subpoolId": "0af1dc33",
+            "displayName": "Espadas_1",
+            "memberObjectIds": [
+                "Espadas/d16d35/shattered-crystal-sword",
+                "Espadas/2559ec/halo-energy-sword-design",
+                "Espadas/5f8c2a/trandafir-weaponcraft-2023",
+                "Espadas/cdd165/soulsucker-weaponcraft",
+                "Espadas/e0a6b6/swordtember-2023-zombie-sword",
+                "HumanoidLike/3aa1de/FantasySword"
+            ],
+            "center5": {
+                "a": 1.0,
+                "b": 0.42531803250312807,
+                "c": 0.24796921014785767,
+                "d": 2.883291482925415,
+                "e": 0.1207837164402008
+            }
+        }
+    ]
+}

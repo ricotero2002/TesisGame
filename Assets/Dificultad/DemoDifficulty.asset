@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c8704004c5ab584c95af1ff0bf06d99, type: 3}
+  m_Name: DemoDifficulty
+  m_EditorClassIdentifier: 
+  columns: 6
+  memoriseTime: 3
+  timeBetweenPhases: 10
+  movementMode: 0
+  hard_easy: 0
+  category: Estatuas

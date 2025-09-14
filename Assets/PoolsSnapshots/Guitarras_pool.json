@@ -1,0 +1,27 @@
+{
+    "poolName": "Guitarras",
+    "subpools": [
+        {
+            "subpoolId": "c12a5716",
+            "displayName": "Guitarras_1",
+            "memberObjectIds": [
+                "Prop/fbaffd/guitarraRara",
+                "Guitarras/fb9151/Gibson",
+                "Guitarras/c29d1b/shark",
+                "Guitarras/fe033c/CriollaPulp",
+                "Guitarras/5bb02e/GuitarraSpider",
+                "Prop/c74765/guitarhero",
+                "Guitarras/fdfa33/feender",
+                "Guitarras/713d13/sg",
+                "Guitarras/b2dd86/metal"
+            ],
+            "center5": {
+                "a": 1.100000023841858,
+                "b": 0.49937283992767336,
+                "c": 0.40459540486335757,
+                "d": 2.2289984226226808,
+                "e": 0.20143364369869233
+            }
+        }
+    ]
+}

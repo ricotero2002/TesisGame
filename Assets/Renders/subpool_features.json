@@ -1,0 +1,1376 @@
+{
+  "Estatuas_1": {
+    "Estatuas/41b9e8/spartacus-louvre-museum": {
+      "features": {
+        "sim_max": 0.9310088753700256,
+        "sim_mean_topK": 0.9268297354380289,
+        "sim_count_thresh": 10,
+        "sim_entropy": 2.3020477630159535
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/8e7b22/PHILOPOEMEN",
+          "score": 0.9310088753700256
+        },
+        {
+          "object_id": "Estatuas/f76fa2/elven-guard-statue",
+          "score": 0.9309407472610474
+        },
+        {
+          "object_id": "Estatuas/fb08a2/bishamonten-guardian-of-the-north",
+          "score": 0.9185395836830139
+        },
+        {
+          "object_id": "Estatuas/08d22b/diane",
+          "score": 0.891996443271637
+        },
+        {
+          "object_id": "Estatuas/cee624/Anchise",
+          "score": 0.8890969157218933
+        }
+      ]
+    },
+    "Estatuas/08d22b/diane": {
+      "features": {
+        "sim_max": 0.9569671154022217,
+        "sim_mean_topK": 0.9413862029711405,
+        "sim_count_thresh": 10,
+        "sim_entropy": 2.3016930707543555
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/8e7b22/PHILOPOEMEN",
+          "score": 0.9569671154022217
+        },
+        {
+          "object_id": "Estatuas/cee624/Anchise",
+          "score": 0.9438645243644714
+        },
+        {
+          "object_id": "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+          "score": 0.9233269691467285
+        },
+        {
+          "object_id": "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios",
+          "score": 0.9166882038116455
+        },
+        {
+          "object_id": "Estatuas/fb08a2/bishamonten-guardian-of-the-north",
+          "score": 0.9005226492881775
+        }
+      ]
+    },
+    "Estatuas/f76fa2/elven-guard-statue": {
+      "features": {
+        "sim_max": 0.9309407472610474,
+        "sim_mean_topK": 0.9201164046923319,
+        "sim_count_thresh": 10,
+        "sim_entropy": 2.3021521995212306
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/41b9e8/spartacus-louvre-museum",
+          "score": 0.9309407472610474
+        },
+        {
+          "object_id": "Estatuas/2459c3/wip-aquamarine-venus",
+          "score": 0.9161379933357239
+        },
+        {
+          "object_id": "Estatuas/fb08a2/bishamonten-guardian-of-the-north",
+          "score": 0.9132704734802246
+        },
+        {
+          "object_id": "Estatuas/8e7b22/PHILOPOEMEN",
+          "score": 0.908985435962677
+        },
+        {
+          "object_id": "Estatuas/cee624/Anchise",
+          "score": 0.9078879952430725
+        }
+      ]
+    },
+    "Estatuas/fb08a2/bishamonten-guardian-of-the-north": {
+      "features": {
+        "sim_max": 0.9200904369354248,
+        "sim_mean_topK": 0.9173001646995544,
+        "sim_count_thresh": 10,
+        "sim_entropy": 2.3019387524787027
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/cee624/Anchise",
+          "score": 0.9200904369354248
+        },
+        {
+          "object_id": "Estatuas/41b9e8/spartacus-louvre-museum",
+          "score": 0.9185395836830139
+        },
+        {
+          "object_id": "Estatuas/f76fa2/elven-guard-statue",
+          "score": 0.9132704734802246
+        },
+        {
+          "object_id": "Estatuas/8e7b22/PHILOPOEMEN",
+          "score": 0.9110177755355835
+        },
+        {
+          "object_id": "Estatuas/08d22b/diane",
+          "score": 0.9005226492881775
+        }
+      ]
+    },
+    "Estatuas/cee624/Anchise": {
+      "features": {
+        "sim_max": 0.9560327529907227,
+        "sim_mean_topK": 0.9450244108835856,
+        "sim_count_thresh": 10,
+        "sim_entropy": 2.3017077571891544
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/8e7b22/PHILOPOEMEN",
+          "score": 0.9560327529907227
+        },
+        {
+          "object_id": "Estatuas/08d22b/diane",
+          "score": 0.9438645243644714
+        },
+        {
+          "object_id": "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+          "score": 0.9351759552955627
+        },
+        {
+          "object_id": "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios",
+          "score": 0.9254851341247559
+        },
+        {
+          "object_id": "Estatuas/fb08a2/bishamonten-guardian-of-the-north",
+          "score": 0.9200904369354248
+        }
+      ]
+    },
+    "Estatuas/8e7b22/PHILOPOEMEN": {
+      "features": {
+        "sim_max": 0.9569671154022217,
+        "sim_mean_topK": 0.9480029145876566,
+        "sim_count_thresh": 10,
+        "sim_entropy": 2.3018375502175505
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/08d22b/diane",
+          "score": 0.9569671154022217
+        },
+        {
+          "object_id": "Estatuas/cee624/Anchise",
+          "score": 0.9560327529907227
+        },
+        {
+          "object_id": "Estatuas/41b9e8/spartacus-louvre-museum",
+          "score": 0.9310088753700256
+        },
+        {
+          "object_id": "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios",
+          "score": 0.9188674688339233
+        },
+        {
+          "object_id": "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+          "score": 0.9158501029014587
+        }
+      ]
+    },
+    "Estatuas/b65ce1/venus-de-milo-aphrodite-of-milos": {
+      "features": {
+        "sim_max": 0.8921603560447693,
+        "sim_mean_topK": 0.8903762102127075,
+        "sim_count_thresh": 9,
+        "sim_entropy": 2.3017052941233973
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/8e7b22/PHILOPOEMEN",
+          "score": 0.8921603560447693
+        },
+        {
+          "object_id": "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios",
+          "score": 0.8908130526542664
+        },
+        {
+          "object_id": "Estatuas/08d22b/diane",
+          "score": 0.8881552219390869
+        },
+        {
+          "object_id": "Estatuas/41b9e8/spartacus-louvre-museum",
+          "score": 0.8734114170074463
+        },
+        {
+          "object_id": "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+          "score": 0.8655698299407959
+        }
+      ]
+    },
+    "Estatuas/2459c3/wip-aquamarine-venus": {
+      "features": {
+        "sim_max": 0.9265690445899963,
+        "sim_mean_topK": 0.9197468558947245,
+        "sim_count_thresh": 10,
+        "sim_entropy": 2.3021100535089456
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/28b1d5/catalina-e-inscripcion-romana",
+          "score": 0.9265690445899963
+        },
+        {
+          "object_id": "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios",
+          "score": 0.9165335297584534
+        },
+        {
+          "object_id": "Estatuas/f76fa2/elven-guard-statue",
+          "score": 0.9161379933357239
+        },
+        {
+          "object_id": "Estatuas/41b9e8/spartacus-louvre-museum",
+          "score": 0.8826226592063904
+        },
+        {
+          "object_id": "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+          "score": 0.875196635723114
+        }
+      ]
+    },
+    "Estatuas/13e0fb/stone-griffin-downing-college-cambridge": {
+      "features": {
+        "sim_max": 0.9540539383888245,
+        "sim_mean_topK": 0.9375189542770386,
+        "sim_count_thresh": 10,
+        "sim_entropy": 2.301968220290238
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios",
+          "score": 0.9540539383888245
+        },
+        {
+          "object_id": "Estatuas/cee624/Anchise",
+          "score": 0.9351759552955627
+        },
+        {
+          "object_id": "Estatuas/08d22b/diane",
+          "score": 0.9233269691467285
+        },
+        {
+          "object_id": "Estatuas/8e7b22/PHILOPOEMEN",
+          "score": 0.9158501029014587
+        },
+        {
+          "object_id": "Estatuas/f76fa2/elven-guard-statue",
+          "score": 0.8839884996414185
+        }
+      ]
+    },
+    "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios": {
+      "features": {
+        "sim_max": 0.9540539383888245,
+        "sim_mean_topK": 0.9328021804491679,
+        "sim_count_thresh": 10,
+        "sim_entropy": 2.30224337059885
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+          "score": 0.9540539383888245
+        },
+        {
+          "object_id": "Estatuas/cee624/Anchise",
+          "score": 0.9254851341247559
+        },
+        {
+          "object_id": "Estatuas/8e7b22/PHILOPOEMEN",
+          "score": 0.9188674688339233
+        },
+        {
+          "object_id": "Estatuas/08d22b/diane",
+          "score": 0.9166882038116455
+        },
+        {
+          "object_id": "Estatuas/2459c3/wip-aquamarine-venus",
+          "score": 0.9165335297584534
+        }
+      ]
+    },
+    "Estatuas/28b1d5/catalina-e-inscripcion-romana": {
+      "features": {
+        "sim_max": 0.9265690445899963,
+        "sim_mean_topK": 0.9001061320304871,
+        "sim_count_thresh": 9,
+        "sim_entropy": 2.3015460697932215
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/2459c3/wip-aquamarine-venus",
+          "score": 0.9265690445899963
+        },
+        {
+          "object_id": "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios",
+          "score": 0.8877069354057312
+        },
+        {
+          "object_id": "Estatuas/f76fa2/elven-guard-statue",
+          "score": 0.8860424160957336
+        },
+        {
+          "object_id": "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+          "score": 0.8651514649391174
+        },
+        {
+          "object_id": "Estatuas/cee624/Anchise",
+          "score": 0.8646204471588135
+        }
+      ]
+    }
+  },
+  "Estatuas_2": {
+    "Estatuas/69102a/elven-ranger-statue": {
+      "features": {
+        "sim_max": 0.8921372890472412,
+        "sim_mean_topK": 0.8820541302363077,
+        "sim_count_thresh": 14,
+        "sim_entropy": 2.8320884096734558
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/4c8d6a/Greif",
+          "score": 0.8921372890472412
+        },
+        {
+          "object_id": "Estatuas/36c89e/ancient-titan-statue",
+          "score": 0.8855649828910828
+        },
+        {
+          "object_id": "Estatuas/a183bd/spirit-of-life-sculpture",
+          "score": 0.8684601187705994
+        },
+        {
+          "object_id": "Estatuas/e1e2d9/anatomical-figure-ecorche",
+          "score": 0.8606178760528564
+        },
+        {
+          "object_id": "Estatuas/aa502a/tolerance-statue",
+          "score": 0.8597646951675415
+        }
+      ]
+    },
+    "Estatuas/36c89e/ancient-titan-statue": {
+      "features": {
+        "sim_max": 0.9152241945266724,
+        "sim_mean_topK": 0.9007048408190409,
+        "sim_count_thresh": 13,
+        "sim_entropy": 2.8316872944865983
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/aa502a/tolerance-statue",
+          "score": 0.9152241945266724
+        },
+        {
+          "object_id": "Estatuas/e1e2d9/anatomical-figure-ecorche",
+          "score": 0.897171139717102
+        },
+        {
+          "object_id": "Estatuas/4c8d6a/Greif",
+          "score": 0.8897191882133484
+        },
+        {
+          "object_id": "Estatuas/69102a/elven-ranger-statue",
+          "score": 0.8855649828910828
+        },
+        {
+          "object_id": "Estatuas/a183bd/spirit-of-life-sculpture",
+          "score": 0.8758217692375183
+        }
+      ]
+    },
+    "Estatuas/4c8d6a/Greif": {
+      "features": {
+        "sim_max": 0.8921372890472412,
+        "sim_mean_topK": 0.8891043464342753,
+        "sim_count_thresh": 15,
+        "sim_entropy": 2.832194656698002
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/69102a/elven-ranger-statue",
+          "score": 0.8921372890472412
+        },
+        {
+          "object_id": "Estatuas/36c89e/ancient-titan-statue",
+          "score": 0.8897191882133484
+        },
+        {
+          "object_id": "Estatuas/a183bd/spirit-of-life-sculpture",
+          "score": 0.8854565620422363
+        },
+        {
+          "object_id": "Estatuas/33c846/TheThinker",
+          "score": 0.8838056921958923
+        },
+        {
+          "object_id": "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+          "score": 0.8682680130004883
+        }
+      ]
+    },
+    "Estatuas/33c846/TheThinker": {
+      "features": {
+        "sim_max": 0.9092240333557129,
+        "sim_mean_topK": 0.8999896248181661,
+        "sim_count_thresh": 16,
+        "sim_entropy": 2.8319610615705897
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/3c6fd9/el-pensador-artur-novoa-cabra",
+          "score": 0.9092240333557129
+        },
+        {
+          "object_id": "Estatuas/0d7c46/ehrengrab-johannes-benk",
+          "score": 0.9042735695838928
+        },
+        {
+          "object_id": "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+          "score": 0.8864712715148926
+        },
+        {
+          "object_id": "Estatuas/4c8d6a/Greif",
+          "score": 0.8838056921958923
+        },
+        {
+          "object_id": "Estatuas/a183bd/spirit-of-life-sculpture",
+          "score": 0.876887857913971
+        }
+      ]
+    },
+    "Estatuas/0d7c46/ehrengrab-johannes-benk": {
+      "features": {
+        "sim_max": 0.9125630259513855,
+        "sim_mean_topK": 0.9087977806727091,
+        "sim_count_thresh": 16,
+        "sim_entropy": 2.832552833171522
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/3c6fd9/el-pensador-artur-novoa-cabra",
+          "score": 0.9125630259513855
+        },
+        {
+          "object_id": "Estatuas/e1e2d9/anatomical-figure-ecorche",
+          "score": 0.9081756472587585
+        },
+        {
+          "object_id": "Estatuas/a183bd/spirit-of-life-sculpture",
+          "score": 0.9056546688079834
+        },
+        {
+          "object_id": "Estatuas/33c846/TheThinker",
+          "score": 0.9042735695838928
+        },
+        {
+          "object_id": "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+          "score": 0.9025733470916748
+        }
+      ]
+    },
+    "Estatuas/884718/songzi-niangniang-bamboo": {
+      "features": {
+        "sim_max": 0.9296318888664246,
+        "sim_mean_topK": 0.9098873535792033,
+        "sim_count_thresh": 15,
+        "sim_entropy": 2.8319834099516044
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/e1e2d9/anatomical-figure-ecorche",
+          "score": 0.9296318888664246
+        },
+        {
+          "object_id": "Estatuas/ef344a/christ-of-the-abyss",
+          "score": 0.9108486175537109
+        },
+        {
+          "object_id": "Estatuas/aa502a/tolerance-statue",
+          "score": 0.8891815543174744
+        },
+        {
+          "object_id": "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+          "score": 0.8797832131385803
+        },
+        {
+          "object_id": "Estatuas/0d7c46/ehrengrab-johannes-benk",
+          "score": 0.8720669746398926
+        }
+      ]
+    },
+    "Estatuas/662d7e/PavlovLP": {
+      "features": {
+        "sim_max": 0.9260449409484863,
+        "sim_mean_topK": 0.9055448174476624,
+        "sim_count_thresh": 13,
+        "sim_entropy": 2.8304099450241464
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/036bb5/aphrodite-of-milos-a-plaster-cast",
+          "score": 0.9260449409484863
+        },
+        {
+          "object_id": "Estatuas/e1e2d9/anatomical-figure-ecorche",
+          "score": 0.8976799249649048
+        },
+        {
+          "object_id": "Estatuas/0d7c46/ehrengrab-johannes-benk",
+          "score": 0.892909586429596
+        },
+        {
+          "object_id": "Estatuas/aa502a/tolerance-statue",
+          "score": 0.8906363844871521
+        },
+        {
+          "object_id": "Estatuas/c79033/neptune-louvre-museum",
+          "score": 0.8762877583503723
+        }
+      ]
+    },
+    "Estatuas/e5cb2b/embracing-peace": {
+      "features": {
+        "sim_max": 0.8957054018974304,
+        "sim_mean_topK": 0.8921400308609009,
+        "sim_count_thresh": 13,
+        "sim_entropy": 2.8318361464677975
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+          "score": 0.8957054018974304
+        },
+        {
+          "object_id": "Estatuas/a183bd/spirit-of-life-sculpture",
+          "score": 0.8955917358398438
+        },
+        {
+          "object_id": "Estatuas/e1e2d9/anatomical-figure-ecorche",
+          "score": 0.8851229548454285
+        },
+        {
+          "object_id": "Estatuas/aa502a/tolerance-statue",
+          "score": 0.8809434771537781
+        },
+        {
+          "object_id": "Estatuas/ef344a/christ-of-the-abyss",
+          "score": 0.8752999901771545
+        }
+      ]
+    },
+    "Estatuas/096cff/aphrodite-crouching-at-her-bath-better": {
+      "features": {
+        "sim_max": 0.9459942579269409,
+        "sim_mean_topK": 0.922075112660726,
+        "sim_count_thresh": 17,
+        "sim_entropy": 2.8322566961771036
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/a183bd/spirit-of-life-sculpture",
+          "score": 0.9459942579269409
+        },
+        {
+          "object_id": "Estatuas/ef344a/christ-of-the-abyss",
+          "score": 0.917657732963562
+        },
+        {
+          "object_id": "Estatuas/0d7c46/ehrengrab-johannes-benk",
+          "score": 0.9025733470916748
+        },
+        {
+          "object_id": "Estatuas/584e4d/beeld-van-maya-en-merit",
+          "score": 0.9023420810699463
+        },
+        {
+          "object_id": "Estatuas/e5cb2b/embracing-peace",
+          "score": 0.8957054018974304
+        }
+      ]
+    },
+    "Estatuas/c79033/neptune-louvre-museum": {
+      "features": {
+        "sim_max": 0.9194836020469666,
+        "sim_mean_topK": 0.9008969664573669,
+        "sim_count_thresh": 11,
+        "sim_entropy": 2.8302915953629517
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/036bb5/aphrodite-of-milos-a-plaster-cast",
+          "score": 0.9194836020469666
+        },
+        {
+          "object_id": "Estatuas/0d7c46/ehrengrab-johannes-benk",
+          "score": 0.8958371877670288
+        },
+        {
+          "object_id": "Estatuas/3c6fd9/el-pensador-artur-novoa-cabra",
+          "score": 0.8873701095581055
+        },
+        {
+          "object_id": "Estatuas/662d7e/PavlovLP",
+          "score": 0.8762877583503723
+        },
+        {
+          "object_id": "Estatuas/e1e2d9/anatomical-figure-ecorche",
+          "score": 0.8550060987472534
+        }
+      ]
+    },
+    "Estatuas/e1e2d9/anatomical-figure-ecorche": {
+      "features": {
+        "sim_max": 0.9612845182418823,
+        "sim_mean_topK": 0.9330306847890218,
+        "sim_count_thresh": 16,
+        "sim_entropy": 2.8317358971467566
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/aa502a/tolerance-statue",
+          "score": 0.9612845182418823
+        },
+        {
+          "object_id": "Estatuas/884718/songzi-niangniang-bamboo",
+          "score": 0.9296318888664246
+        },
+        {
+          "object_id": "Estatuas/0d7c46/ehrengrab-johannes-benk",
+          "score": 0.9081756472587585
+        },
+        {
+          "object_id": "Estatuas/036bb5/aphrodite-of-milos-a-plaster-cast",
+          "score": 0.9054828882217407
+        },
+        {
+          "object_id": "Estatuas/a183bd/spirit-of-life-sculpture",
+          "score": 0.9024194478988647
+        }
+      ]
+    },
+    "Estatuas/aa502a/tolerance-statue": {
+      "features": {
+        "sim_max": 0.9612845182418823,
+        "sim_mean_topK": 0.924713134765625,
+        "sim_count_thresh": 15,
+        "sim_entropy": 2.8314449505662607
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/e1e2d9/anatomical-figure-ecorche",
+          "score": 0.9612845182418823
+        },
+        {
+          "object_id": "Estatuas/36c89e/ancient-titan-statue",
+          "score": 0.9152241945266724
+        },
+        {
+          "object_id": "Estatuas/036bb5/aphrodite-of-milos-a-plaster-cast",
+          "score": 0.8976306915283203
+        },
+        {
+          "object_id": "Estatuas/0d7c46/ehrengrab-johannes-benk",
+          "score": 0.8959620594978333
+        },
+        {
+          "object_id": "Estatuas/662d7e/PavlovLP",
+          "score": 0.8906363844871521
+        }
+      ]
+    },
+    "Estatuas/f63cde/armadura-samurai-do-maru-bmvb": {
+      "features": {
+        "sim_max": 0.8821437358856201,
+        "sim_mean_topK": 0.8668604890505472,
+        "sim_count_thresh": 5,
+        "sim_entropy": 2.82920328008367
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/584e4d/beeld-van-maya-en-merit",
+          "score": 0.8821437358856201
+        },
+        {
+          "object_id": "Estatuas/ef344a/christ-of-the-abyss",
+          "score": 0.8637203574180603
+        },
+        {
+          "object_id": "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+          "score": 0.8547173738479614
+        },
+        {
+          "object_id": "Estatuas/a183bd/spirit-of-life-sculpture",
+          "score": 0.8328955173492432
+        },
+        {
+          "object_id": "Estatuas/e5cb2b/embracing-peace",
+          "score": 0.8177221417427063
+        }
+      ]
+    },
+    "Estatuas/ef344a/christ-of-the-abyss": {
+      "features": {
+        "sim_max": 0.917657732963562,
+        "sim_mean_topK": 0.9125857949256897,
+        "sim_count_thresh": 13,
+        "sim_entropy": 2.831558137395523
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+          "score": 0.917657732963562
+        },
+        {
+          "object_id": "Estatuas/884718/songzi-niangniang-bamboo",
+          "score": 0.9108486175537109
+        },
+        {
+          "object_id": "Estatuas/a183bd/spirit-of-life-sculpture",
+          "score": 0.9092510342597961
+        },
+        {
+          "object_id": "Estatuas/584e4d/beeld-van-maya-en-merit",
+          "score": 0.8949835300445557
+        },
+        {
+          "object_id": "Estatuas/e1e2d9/anatomical-figure-ecorche",
+          "score": 0.8842163681983948
+        }
+      ]
+    },
+    "Estatuas/584e4d/beeld-van-maya-en-merit": {
+      "features": {
+        "sim_max": 0.9023420810699463,
+        "sim_mean_topK": 0.8980332215627035,
+        "sim_count_thresh": 11,
+        "sim_entropy": 2.8314668378854044
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+          "score": 0.9023420810699463
+        },
+        {
+          "object_id": "Estatuas/0d7c46/ehrengrab-johannes-benk",
+          "score": 0.8967740535736084
+        },
+        {
+          "object_id": "Estatuas/ef344a/christ-of-the-abyss",
+          "score": 0.8949835300445557
+        },
+        {
+          "object_id": "Estatuas/a183bd/spirit-of-life-sculpture",
+          "score": 0.8854993581771851
+        },
+        {
+          "object_id": "Estatuas/f63cde/armadura-samurai-do-maru-bmvb",
+          "score": 0.8821437358856201
+        }
+      ]
+    },
+    "Estatuas/3c6fd9/el-pensador-artur-novoa-cabra": {
+      "features": {
+        "sim_max": 0.9125630259513855,
+        "sim_mean_topK": 0.9030523896217346,
+        "sim_count_thresh": 11,
+        "sim_entropy": 2.830971549481273
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/0d7c46/ehrengrab-johannes-benk",
+          "score": 0.9125630259513855
+        },
+        {
+          "object_id": "Estatuas/33c846/TheThinker",
+          "score": 0.9092240333557129
+        },
+        {
+          "object_id": "Estatuas/c79033/neptune-louvre-museum",
+          "score": 0.8873701095581055
+        },
+        {
+          "object_id": "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+          "score": 0.8772486448287964
+        },
+        {
+          "object_id": "Estatuas/036bb5/aphrodite-of-milos-a-plaster-cast",
+          "score": 0.8670395612716675
+        }
+      ]
+    },
+    "Estatuas/036bb5/aphrodite-of-milos-a-plaster-cast": {
+      "features": {
+        "sim_max": 0.9260449409484863,
+        "sim_mean_topK": 0.9170038104057312,
+        "sim_count_thresh": 13,
+        "sim_entropy": 2.8302485113913356
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/662d7e/PavlovLP",
+          "score": 0.9260449409484863
+        },
+        {
+          "object_id": "Estatuas/c79033/neptune-louvre-museum",
+          "score": 0.9194836020469666
+        },
+        {
+          "object_id": "Estatuas/e1e2d9/anatomical-figure-ecorche",
+          "score": 0.9054828882217407
+        },
+        {
+          "object_id": "Estatuas/aa502a/tolerance-statue",
+          "score": 0.8976306915283203
+        },
+        {
+          "object_id": "Estatuas/0d7c46/ehrengrab-johannes-benk",
+          "score": 0.8923049569129944
+        }
+      ]
+    },
+    "Estatuas/a183bd/spirit-of-life-sculpture": {
+      "features": {
+        "sim_max": 0.9459942579269409,
+        "sim_mean_topK": 0.9202999869982401,
+        "sim_count_thresh": 17,
+        "sim_entropy": 2.8323312065779627
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+          "score": 0.9459942579269409
+        },
+        {
+          "object_id": "Estatuas/ef344a/christ-of-the-abyss",
+          "score": 0.9092510342597961
+        },
+        {
+          "object_id": "Estatuas/0d7c46/ehrengrab-johannes-benk",
+          "score": 0.9056546688079834
+        },
+        {
+          "object_id": "Estatuas/e1e2d9/anatomical-figure-ecorche",
+          "score": 0.9024194478988647
+        },
+        {
+          "object_id": "Estatuas/e5cb2b/embracing-peace",
+          "score": 0.8955917358398438
+        }
+      ]
+    }
+  },
+  "Estatuas_3": {
+    "Estatuas/e330e2/HumanBody": {
+      "features": {
+        "sim_max": 0.9152196645736694,
+        "sim_mean_topK": 0.8789729078610738,
+        "sim_count_thresh": 9,
+        "sim_entropy": 2.396524848721576
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/a16e56/Zeuz",
+          "score": 0.9152196645736694
+        },
+        {
+          "object_id": "Estatuas/ac539e/beauty-and-the-beast-frymburk",
+          "score": 0.8810244202613831
+        },
+        {
+          "object_id": "Estatuas/826aae/Seine",
+          "score": 0.840674638748169
+        },
+        {
+          "object_id": "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+          "score": 0.8289469480514526
+        },
+        {
+          "object_id": "Estatuas/1bfd4f/athena-3dst8",
+          "score": 0.8254269361495972
+        }
+      ]
+    },
+    "Estatuas/826aae/Seine": {
+      "features": {
+        "sim_max": 0.9241976737976074,
+        "sim_mean_topK": 0.9028456012407938,
+        "sim_count_thresh": 8,
+        "sim_entropy": 2.3963056868026626
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/1cc272/bronze-moses-at-augustana-university",
+          "score": 0.9241976737976074
+        },
+        {
+          "object_id": "Estatuas/6782d8/the-punishment-a-study-of-farnese-hercules",
+          "score": 0.8987104296684265
+        },
+        {
+          "object_id": "Estatuas/a16e56/Zeuz",
+          "score": 0.8856287002563477
+        },
+        {
+          "object_id": "Estatuas/319f1b/aphrodite-crouching-british-museum",
+          "score": 0.8821344971656799
+        },
+        {
+          "object_id": "Estatuas/cf8d3a/EstatuaMercuri",
+          "score": 0.8446424007415771
+        }
+      ]
+    },
+    "Estatuas/a16e56/Zeuz": {
+      "features": {
+        "sim_max": 0.9326152205467224,
+        "sim_mean_topK": 0.921981672445933,
+        "sim_count_thresh": 10,
+        "sim_entropy": 2.396925674350525
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/ac539e/beauty-and-the-beast-frymburk",
+          "score": 0.9326152205467224
+        },
+        {
+          "object_id": "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+          "score": 0.9181101322174072
+        },
+        {
+          "object_id": "Estatuas/e330e2/HumanBody",
+          "score": 0.9152196645736694
+        },
+        {
+          "object_id": "Estatuas/1bfd4f/athena-3dst8",
+          "score": 0.8939077854156494
+        },
+        {
+          "object_id": "Estatuas/cf8d3a/EstatuaMercuri",
+          "score": 0.8938549160957336
+        }
+      ]
+    },
+    "Estatuas/cf8d3a/EstatuaMercuri": {
+      "features": {
+        "sim_max": 0.9607807397842407,
+        "sim_mean_topK": 0.9196149508158366,
+        "sim_count_thresh": 11,
+        "sim_entropy": 2.3971902687299163
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/c25d0d/figure-of-a-dancer",
+          "score": 0.9607807397842407
+        },
+        {
+          "object_id": "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+          "score": 0.9042091965675354
+        },
+        {
+          "object_id": "Estatuas/a16e56/Zeuz",
+          "score": 0.8938549160957336
+        },
+        {
+          "object_id": "Estatuas/98b0d7/Alessandro",
+          "score": 0.8863346576690674
+        },
+        {
+          "object_id": "Estatuas/1bfd4f/athena-3dst8",
+          "score": 0.8831911683082581
+        }
+      ]
+    },
+    "Estatuas/98b0d7/Alessandro": {
+      "features": {
+        "sim_max": 0.894363284111023,
+        "sim_mean_topK": 0.889903744061788,
+        "sim_count_thresh": 7,
+        "sim_entropy": 2.396178983093526
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/c25d0d/figure-of-a-dancer",
+          "score": 0.894363284111023
+        },
+        {
+          "object_id": "Estatuas/1bfd4f/athena-3dst8",
+          "score": 0.8890132904052734
+        },
+        {
+          "object_id": "Estatuas/cf8d3a/EstatuaMercuri",
+          "score": 0.8863346576690674
+        },
+        {
+          "object_id": "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+          "score": 0.8753140568733215
+        },
+        {
+          "object_id": "Estatuas/ac539e/beauty-and-the-beast-frymburk",
+          "score": 0.8626575469970703
+        }
+      ]
+    },
+    "Estatuas/319f1b/aphrodite-crouching-british-museum": {
+      "features": {
+        "sim_max": 0.906714677810669,
+        "sim_mean_topK": 0.8874702254931132,
+        "sim_count_thresh": 10,
+        "sim_entropy": 2.397212944107555
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/1cc272/bronze-moses-at-augustana-university",
+          "score": 0.906714677810669
+        },
+        {
+          "object_id": "Estatuas/826aae/Seine",
+          "score": 0.8821344971656799
+        },
+        {
+          "object_id": "Estatuas/cf8d3a/EstatuaMercuri",
+          "score": 0.8735615015029907
+        },
+        {
+          "object_id": "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+          "score": 0.8723821640014648
+        },
+        {
+          "object_id": "Estatuas/6782d8/the-punishment-a-study-of-farnese-hercules",
+          "score": 0.8588846325874329
+        }
+      ]
+    },
+    "Estatuas/ac539e/beauty-and-the-beast-frymburk": {
+      "features": {
+        "sim_max": 0.9326152205467224,
+        "sim_mean_topK": 0.9138826131820679,
+        "sim_count_thresh": 9,
+        "sim_entropy": 2.395934923308162
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/a16e56/Zeuz",
+          "score": 0.9326152205467224
+        },
+        {
+          "object_id": "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+          "score": 0.9051361083984375
+        },
+        {
+          "object_id": "Estatuas/1bfd4f/athena-3dst8",
+          "score": 0.9038965106010437
+        },
+        {
+          "object_id": "Estatuas/e330e2/HumanBody",
+          "score": 0.8810244202613831
+        },
+        {
+          "object_id": "Estatuas/cf8d3a/EstatuaMercuri",
+          "score": 0.8684875965118408
+        }
+      ]
+    },
+    "Estatuas/6782d8/the-punishment-a-study-of-farnese-hercules": {
+      "features": {
+        "sim_max": 0.9245759844779968,
+        "sim_mean_topK": 0.8988849322001139,
+        "sim_count_thresh": 5,
+        "sim_entropy": 2.3951383204114824
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/1cc272/bronze-moses-at-augustana-university",
+          "score": 0.9245759844779968
+        },
+        {
+          "object_id": "Estatuas/826aae/Seine",
+          "score": 0.8987104296684265
+        },
+        {
+          "object_id": "Estatuas/cf8d3a/EstatuaMercuri",
+          "score": 0.8733683824539185
+        },
+        {
+          "object_id": "Estatuas/319f1b/aphrodite-crouching-british-museum",
+          "score": 0.8588846325874329
+        },
+        {
+          "object_id": "Estatuas/c25d0d/figure-of-a-dancer",
+          "score": 0.8244594931602478
+        }
+      ]
+    },
+    "Estatuas/c25d0d/figure-of-a-dancer": {
+      "features": {
+        "sim_max": 0.9607807397842407,
+        "sim_mean_topK": 0.9197628299395243,
+        "sim_count_thresh": 11,
+        "sim_entropy": 2.3965889958856907
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/cf8d3a/EstatuaMercuri",
+          "score": 0.9607807397842407
+        },
+        {
+          "object_id": "Estatuas/1bfd4f/athena-3dst8",
+          "score": 0.8992944955825806
+        },
+        {
+          "object_id": "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+          "score": 0.8992132544517517
+        },
+        {
+          "object_id": "Estatuas/98b0d7/Alessandro",
+          "score": 0.894363284111023
+        },
+        {
+          "object_id": "Estatuas/a16e56/Zeuz",
+          "score": 0.8865612745285034
+        }
+      ]
+    },
+    "Estatuas/1cc272/bronze-moses-at-augustana-university": {
+      "features": {
+        "sim_max": 0.9245759844779968,
+        "sim_mean_topK": 0.9184961120287577,
+        "sim_count_thresh": 11,
+        "sim_entropy": 2.3968315212410722
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/6782d8/the-punishment-a-study-of-farnese-hercules",
+          "score": 0.9245759844779968
+        },
+        {
+          "object_id": "Estatuas/826aae/Seine",
+          "score": 0.9241976737976074
+        },
+        {
+          "object_id": "Estatuas/319f1b/aphrodite-crouching-british-museum",
+          "score": 0.906714677810669
+        },
+        {
+          "object_id": "Estatuas/cf8d3a/EstatuaMercuri",
+          "score": 0.8807849287986755
+        },
+        {
+          "object_id": "Estatuas/a16e56/Zeuz",
+          "score": 0.8713659048080444
+        }
+      ]
+    },
+    "Estatuas/6d6fc8/1968212-terpsichore-lyran": {
+      "features": {
+        "sim_max": 0.9426068067550659,
+        "sim_mean_topK": 0.9219510157903036,
+        "sim_count_thresh": 10,
+        "sim_entropy": 2.396735093408637
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/1bfd4f/athena-3dst8",
+          "score": 0.9426068067550659
+        },
+        {
+          "object_id": "Estatuas/a16e56/Zeuz",
+          "score": 0.9181101322174072
+        },
+        {
+          "object_id": "Estatuas/ac539e/beauty-and-the-beast-frymburk",
+          "score": 0.9051361083984375
+        },
+        {
+          "object_id": "Estatuas/cf8d3a/EstatuaMercuri",
+          "score": 0.9042091965675354
+        },
+        {
+          "object_id": "Estatuas/c25d0d/figure-of-a-dancer",
+          "score": 0.8992132544517517
+        }
+      ]
+    },
+    "Estatuas/1bfd4f/athena-3dst8": {
+      "features": {
+        "sim_max": 0.9426068067550659,
+        "sim_mean_topK": 0.9152659376462301,
+        "sim_count_thresh": 9,
+        "sim_entropy": 2.3959914306122427
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+          "score": 0.9426068067550659
+        },
+        {
+          "object_id": "Estatuas/ac539e/beauty-and-the-beast-frymburk",
+          "score": 0.9038965106010437
+        },
+        {
+          "object_id": "Estatuas/c25d0d/figure-of-a-dancer",
+          "score": 0.8992944955825806
+        },
+        {
+          "object_id": "Estatuas/a16e56/Zeuz",
+          "score": 0.8939077854156494
+        },
+        {
+          "object_id": "Estatuas/98b0d7/Alessandro",
+          "score": 0.8890132904052734
+        }
+      ]
+    }
+  },
+  "Estatuas_4": {
+    "Estatuas/55ec64/valkyrie-sculpture": {
+      "features": {
+        "sim_max": 0.8504083752632141,
+        "sim_mean_topK": 0.8504083752632141,
+        "sim_count_thresh": 1,
+        "sim_entropy": -1.000000082690371e-10
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/ab46ee/Horse",
+          "score": 0.8504083752632141
+        }
+      ]
+    },
+    "Estatuas/ab46ee/Horse": {
+      "features": {
+        "sim_max": 0.8504083752632141,
+        "sim_mean_topK": 0.8504083752632141,
+        "sim_count_thresh": 1,
+        "sim_entropy": -1.000000082690371e-10
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/55ec64/valkyrie-sculpture",
+          "score": 0.8504083752632141
+        }
+      ]
+    }
+  },
+  "Estatuas_5": {
+    "Estatuas/eaa469/skritek-wooden-statue": {
+      "features": {
+        "sim_max": 0,
+        "sim_mean_topK": 0,
+        "sim_count_thresh": 0,
+        "sim_entropy": 0
+      },
+      "topK": []
+    }
+  },
+  "Estatuas_6": {
+    "Estatuas/55e544/kusunoki-masashige-takamura-koun": {
+      "features": {
+        "sim_max": 0.9497195482254028,
+        "sim_mean_topK": 0.9497195482254028,
+        "sim_count_thresh": 1,
+        "sim_entropy": -1.000000082690371e-10
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/be4451/hl-georg-als-drachentoter",
+          "score": 0.9497195482254028
+        }
+      ]
+    },
+    "Estatuas/be4451/hl-georg-als-drachentoter": {
+      "features": {
+        "sim_max": 0.9497195482254028,
+        "sim_mean_topK": 0.9497195482254028,
+        "sim_count_thresh": 1,
+        "sim_entropy": -1.000000082690371e-10
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/55e544/kusunoki-masashige-takamura-koun",
+          "score": 0.9497195482254028
+        }
+      ]
+    }
+  },
+  "Estatuas_7": {
+    "Estatuas/b60bd3/arjuna-wayang-golek-theatre-puppet": {
+      "features": {
+        "sim_max": 0,
+        "sim_mean_topK": 0,
+        "sim_count_thresh": 0,
+        "sim_entropy": 0
+      },
+      "topK": []
+    }
+  },
+  "Estatuas_8": {
+    "Estatuas/02c617/boardwalk-souvenir-clown-statuette": {
+      "features": {
+        "sim_max": 0.9165242910385132,
+        "sim_mean_topK": 0.8991907835006714,
+        "sim_count_thresh": 2,
+        "sim_entropy": 0.6929613716286034
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/04b3d7/hawaiian-tiki-3dscan",
+          "score": 0.9165242910385132
+        },
+        {
+          "object_id": "Estatuas/c75d49/roman-bust-of-isis",
+          "score": 0.8818572759628296
+        }
+      ]
+    },
+    "Estatuas/04b3d7/hawaiian-tiki-3dscan": {
+      "features": {
+        "sim_max": 0.9165242910385132,
+        "sim_mean_topK": 0.8838470876216888,
+        "sim_count_thresh": 2,
+        "sim_entropy": 0.692463576542544
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/02c617/boardwalk-souvenir-clown-statuette",
+          "score": 0.9165242910385132
+        },
+        {
+          "object_id": "Estatuas/c75d49/roman-bust-of-isis",
+          "score": 0.8511698842048645
+        }
+      ]
+    },
+    "Estatuas/c75d49/roman-bust-of-isis": {
+      "features": {
+        "sim_max": 0.8818572759628296,
+        "sim_mean_topK": 0.866513580083847,
+        "sim_count_thresh": 2,
+        "sim_entropy": 0.6929903962953374
+      },
+      "topK": [
+        {
+          "object_id": "Estatuas/02c617/boardwalk-souvenir-clown-statuette",
+          "score": 0.8818572759628296
+        },
+        {
+          "object_id": "Estatuas/04b3d7/hawaiian-tiki-3dscan",
+          "score": 0.8511698842048645
+        }
+      ]
+    }
+  }
+}

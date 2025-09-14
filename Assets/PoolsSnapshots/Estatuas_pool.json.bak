@@ -1,0 +1,154 @@
+{
+    "poolName": "Estatuas",
+    "subpools": [
+        {
+            "subpoolId": "70550df3",
+            "displayName": "Estatuas_1",
+            "memberObjectIds": [
+                "Estatuas/036bb5/aphrodite-of-milos-a-plaster-cast",
+                "Estatuas/b65ce1/venus-de-milo-aphrodite-of-milos",
+                "Estatuas/2459c3/wip-aquamarine-venus",
+                "Estatuas/b60bd3/arjuna-wayang-golek-theatre-puppet",
+                "Estatuas/f76fa2/elven-guard-statue",
+                "Estatuas/884718/songzi-niangniang-bamboo",
+                "Estatuas/f63cde/armadura-samurai-do-maru-bmvb",
+                "Estatuas/c75d49/roman-bust-of-isis",
+                "Estatuas/04b3d7/hawaiian-tiki-3dscan",
+                "Estatuas/02c617/boardwalk-souvenir-clown-statuette"
+            ],
+            "center5": {
+                "a": 1.6950000524520875,
+                "b": 0.5664455890655518,
+                "c": 0.4970797598361969,
+                "d": 3.0042803287506105,
+                "e": 0.3985337018966675
+            }
+        },
+        {
+            "subpoolId": "0e958dac",
+            "displayName": "Estatuas_2",
+            "memberObjectIds": [
+                "Estatuas/319f1b/aphrodite-crouching-british-museum",
+                "Estatuas/ab46ee/Horse",
+                "Estatuas/e5cb2b/embracing-peace",
+                "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+                "Estatuas/0d7c46/ehrengrab-johannes-benk",
+                "Estatuas/fb08a2/bishamonten-guardian-of-the-north",
+                "Estatuas/aa502a/tolerance-statue",
+                "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios",
+                "Estatuas/8e7b22/PHILOPOEMEN",
+                "Estatuas/1cc272/bronze-moses-at-augustana-university",
+                "Estatuas/08d22b/diane",
+                "Estatuas/6782d8/the-punishment-a-study-of-farnese-hercules",
+                "Estatuas/ac539e/beauty-and-the-beast-frymburk",
+                "Estatuas/c25d0d/figure-of-a-dancer",
+                "Estatuas/98b0d7/Alessandro",
+                "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+                "Estatuas/e1e2d9/anatomical-figure-ecorche",
+                "Estatuas/28b1d5/catalina-e-inscripcion-romana",
+                "Estatuas/a16e56/Zeuz",
+                "Estatuas/41b9e8/spartacus-louvre-museum",
+                "Estatuas/cee624/Anchise",
+                "Estatuas/cf8d3a/EstatuaMercuri",
+                "Estatuas/826aae/Seine",
+                "Estatuas/1bfd4f/athena-3dst8",
+                "Estatuas/a183bd/spirit-of-life-sculpture"
+            ],
+            "center5": {
+                "a": 1.8380000591278077,
+                "b": 0.9617230296134949,
+                "c": 0.8296113014221191,
+                "d": 1.9443376064300538,
+                "e": 0.896715521812439
+            }
+        },
+        {
+            "subpoolId": "eb28cddf",
+            "displayName": "Estatuas_3",
+            "memberObjectIds": [
+                "Estatuas/c79033/neptune-louvre-museum",
+                "Estatuas/4c8d6a/Greif",
+                "Estatuas/eaa469/skritek-wooden-statue",
+                "Estatuas/6fbe2c/lion-crushing-a-serpent",
+                "Estatuas/ef344a/christ-of-the-abyss",
+                "Estatuas/69102a/elven-ranger-statue",
+                "Estatuas/36c89e/ancient-titan-statue",
+                "Estatuas/5daab3/netsuke-shoki-capturing-an-oni",
+                "Estatuas/5a95c8/Sitzender",
+                "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+                "Estatuas/662d7e/PavlovLP",
+                "Estatuas/584e4d/beeld-van-maya-en-merit",
+                "Estatuas/3c6fd9/el-pensador-artur-novoa-cabra",
+                "VehicleLike/80fe98/pietat-museu-frederic-mares"
+            ],
+            "center5": {
+                "a": 1.4714285135269166,
+                "b": 1.4298313856124879,
+                "c": 1.0632461309432984,
+                "d": 1.0532431602478028,
+                "e": 1.1456774473190308
+            }
+        },
+        {
+            "subpoolId": "13dd1f1d",
+            "displayName": "Estatuas_4",
+            "memberObjectIds": [
+                "Estatuas/fc3b83/Hambuerguer",
+                "Estatuas/2a9402/tibetan-amoghasiddhi-buddha",
+                "Estatuas/47c25b/buddha-100k-vertices-decimation",
+                "Estatuas/f71e1c/rhetorician",
+                "Estatuas/7200e7/12th-c-ce-water-moon-guanyin",
+                "Estatuas/8cfa03/lowe",
+                "Estatuas/33c846/TheThinker",
+                "Estatuas/1fc9cc/seated-bodhisattva-guanyin-12th-c-ce",
+                "Estatuas/9c0ad5/dog",
+                "Estatuas/9ded56/dwarf_02"
+            ],
+            "center5": {
+                "a": 1.190000057220459,
+                "b": 0.9150165319442749,
+                "c": 0.6507088541984558,
+                "d": 1.3182148933410645,
+                "e": 0.5358185768127441
+            }
+        },
+        {
+            "subpoolId": "355ca4f0",
+            "displayName": "Estatuas_5",
+            "memberObjectIds": [
+                "Estatuas/7a19b0/artemis-fountain",
+                "Estatuas/f46600/mechanically-articulated-doll-a-man",
+                "Estatuas/80433b/marly-louvre-museum",
+                "Estatuas/9a6d72/louis-xiv-de-france-louvre-paris",
+                "Estatuas/c0c012/mercure-monte-sur-pegase-louvre-museum",
+                "Estatuas/0b9ac1/equestrian-statue-of-napoleon",
+                "Estatuas/45d62f/rossbandiger",
+                "Estatuas/e330e2/HumanBody",
+                "Estatuas/be4451/hl-georg-als-drachentoter"
+            ],
+            "center5": {
+                "a": 2.5,
+                "b": 2.0676257610321047,
+                "c": 1.0294418334960938,
+                "d": 1.2411484718322755,
+                "e": 1.826878547668457
+            }
+        },
+        {
+            "subpoolId": "bfbc0759",
+            "displayName": "Estatuas_6",
+            "memberObjectIds": [
+                "Estatuas/55ec64/valkyrie-sculpture",
+                "Estatuas/3bf9c0/elastolin-indian-horseman",
+                "Estatuas/55e544/kusunoki-masashige-takamura-koun"
+            ],
+            "center5": {
+                "a": 2.493333578109741,
+                "b": 3.593919277191162,
+                "c": 1.8515194654464722,
+                "d": 0.5441237092018127,
+                "e": 2.9117679595947267
+            }
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "poolName": "Espadas",
+    "subpools": [
+        {
+            "subpoolId": "0af1dc33",
+            "displayName": "Espadas_1",
+            "memberObjectIds": [
+                "Espadas/d16d35/shattered-crystal-sword",
+                "Espadas/2559ec/halo-energy-sword-design",
+                "Espadas/5f8c2a/trandafir-weaponcraft-2023"
+            ],
+            "center5": {
+                "a": 1.0,
+                "b": 0.3387945592403412,
+                "c": 0.11833181232213974,
+                "d": 3.047119140625,
+                "e": 0.03478413075208664
+            }
+        },
+        {
+            "subpoolId": "a1067a94",
+            "displayName": "Espadas_2",
+            "memberObjectIds": [
+                "Espadas/cdd165/soulsucker-weaponcraft",
+                "Espadas/e0a6b6/swordtember-2023-zombie-sword"
+            ],
+            "center5": {
+                "a": 0.9999999403953552,
+                "b": 0.6703441739082336,
+                "c": 0.5163270235061646,
+                "d": 1.512935757637024,
+                "e": 0.3005110025405884
+            }
+        },
+        {
+            "subpoolId": "5d67c6ff",
+            "displayName": "Espadas_3",
+            "memberObjectIds": [
+                "HumanoidLike/3aa1de/FantasySword"
+            ],
+            "center5": {
+                "a": 0.9999998807907105,
+                "b": 0.19483603537082673,
+                "c": 0.10016575455665589,
+                "d": 5.1325201988220219,
+                "e": 0.019327878952026368
+            }
+        }
+    ]
+}

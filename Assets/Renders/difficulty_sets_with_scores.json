@@ -1,0 +1,1103 @@
+{
+  "categories": [
+    {
+      "category": "Espadas",
+      "subpools": [
+        {
+          "subpoolId": "Espadas_1",
+          "sets": [
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Espadas/cdd165/soulsucker-weaponcraft",
+                "Espadas/e0a6b6/swordtember-2023-zombie-sword"
+              ],
+              "intra_mean": 0.9114885330200195,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Espadas_sub_Espadas_1_size2_hard_01.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "easy",
+              "group": [
+                "Espadas/cdd165/soulsucker-weaponcraft",
+                "Espadas/e0a6b6/swordtember-2023-zombie-sword"
+              ],
+              "intra_mean": 0.9114885330200195,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Espadas_sub_Espadas_1_size2_easy_01.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "hard",
+              "group": [
+                "Espadas/d16d35/shattered-crystal-sword",
+                "HumanoidLike/3aa1de/FantasySword",
+                "Espadas/e0a6b6/swordtember-2023-zombie-sword",
+                "Espadas/5f8c2a/trandafir-weaponcraft-2023"
+              ],
+              "intra_mean": 0.9017063975334167,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Espadas_sub_Espadas_1_size4_hard_01.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "easy",
+              "group": [
+                "Espadas/5f8c2a/trandafir-weaponcraft-2023",
+                "HumanoidLike/3aa1de/FantasySword",
+                "Espadas/cdd165/soulsucker-weaponcraft",
+                "Espadas/2559ec/halo-energy-sword-design"
+              ],
+              "intra_mean": 0.8650455474853516,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Espadas_sub_Espadas_1_size4_easy_01.png"
+            },
+            {
+              "size": 6,
+              "difficulty": "hard",
+              "group": [
+                "Espadas/d16d35/shattered-crystal-sword",
+                "Espadas/5f8c2a/trandafir-weaponcraft-2023",
+                "Espadas/e0a6b6/swordtember-2023-zombie-sword",
+                "HumanoidLike/3aa1de/FantasySword",
+                "Espadas/2559ec/halo-energy-sword-design",
+                "Espadas/cdd165/soulsucker-weaponcraft"
+              ],
+              "intra_mean": 0.8790817260742188,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Espadas_sub_Espadas_1_size6_hard_01.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Estatuas",
+      "subpools": [
+        {
+          "subpoolId": "Estatuas_1",
+          "sets": [
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/08d22b/diane",
+                "Estatuas/8e7b22/PHILOPOEMEN"
+              ],
+              "intra_mean": 0.9569672346115112,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_1_size2_hard_01.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+                "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios"
+              ],
+              "intra_mean": 0.9540537595748901,
+              "hardness_pct": 97.71081312966689,
+              "easiness_pct": 2.2891868703331153,
+              "viz_image": "Estatuas_sub_Estatuas_1_size2_hard_02.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/41b9e8/spartacus-louvre-museum",
+                "Estatuas/cee624/Anchise"
+              ],
+              "intra_mean": 0.8890969753265381,
+              "hardness_pct": 46.67271746338612,
+              "easiness_pct": 53.32728253661387,
+              "viz_image": "Estatuas_sub_Estatuas_1_size2_easy_01.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/b65ce1/venus-de-milo-aphrodite-of-milos",
+                "Estatuas/f76fa2/elven-guard-statue"
+              ],
+              "intra_mean": 0.8296960592269897,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_1_size2_easy_02.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/41b9e8/spartacus-louvre-museum",
+                "Estatuas/f76fa2/elven-guard-statue",
+                "Estatuas/fb08a2/bishamonten-guardian-of-the-north",
+                "Estatuas/2459c3/wip-aquamarine-venus"
+              ],
+              "intra_mean": 0.9024618268013,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_1_size4_hard_01.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/b65ce1/venus-de-milo-aphrodite-of-milos",
+                "Estatuas/28b1d5/catalina-e-inscripcion-romana",
+                "Estatuas/cee624/Anchise",
+                "Estatuas/08d22b/diane"
+              ],
+              "intra_mean": 0.8555805087089539,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_1_size4_easy_01.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/fb08a2/bishamonten-guardian-of-the-north",
+                "Estatuas/b65ce1/venus-de-milo-aphrodite-of-milos",
+                "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+                "Estatuas/8e7b22/PHILOPOEMEN"
+              ],
+              "intra_mean": 0.8811153769493103,
+              "hardness_pct": 54.4670441860406,
+              "easiness_pct": 45.5329558139594,
+              "viz_image": "Estatuas_sub_Estatuas_1_size4_easy_02.png"
+            },
+            {
+              "size": 6,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/cee624/Anchise",
+                "Estatuas/8e7b22/PHILOPOEMEN",
+                "Estatuas/08d22b/diane",
+                "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+                "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios",
+                "Estatuas/f76fa2/elven-guard-statue"
+              ],
+              "intra_mean": 0.922946035861969,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_1_size6_hard_01.png"
+            },
+            {
+              "size": 6,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/08d22b/diane",
+                "Estatuas/28b1d5/catalina-e-inscripcion-romana",
+                "Estatuas/b65ce1/venus-de-milo-aphrodite-of-milos",
+                "Estatuas/fb08a2/bishamonten-guardian-of-the-north",
+                "Estatuas/2459c3/wip-aquamarine-venus",
+                "Estatuas/41b9e8/spartacus-louvre-museum"
+              ],
+              "intra_mean": 0.8638808131217957,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_1_size6_easy_01.png"
+            },
+            {
+              "size": 8,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/036bb5/aphrodite-of-milos-a-plaster-cast",
+                "Estatuas/884718/songzi-niangniang-bamboo",
+                "Estatuas/02c617/boardwalk-souvenir-clown-statuette",
+                "Estatuas/b60bd3/arjuna-wayang-golek-theatre-puppet",
+                "Estatuas/2459c3/wip-aquamarine-venus",
+                "Estatuas/c75d49/roman-bust-of-isis",
+                "Estatuas/04b3d7/hawaiian-tiki-3dscan",
+                "Estatuas/f76fa2/elven-guard-statue"
+              ],
+              "intra_mean": 0.8975569605827332,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_1_size8_hard_01.png"
+            },
+            {
+              "size": 10,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/036bb5/aphrodite-of-milos-a-plaster-cast",
+                "Estatuas/f76fa2/elven-guard-statue",
+                "Estatuas/b65ce1/venus-de-milo-aphrodite-of-milos",
+                "Estatuas/2459c3/wip-aquamarine-venus",
+                "Estatuas/c75d49/roman-bust-of-isis",
+                "Estatuas/884718/songzi-niangniang-bamboo",
+                "Estatuas/02c617/boardwalk-souvenir-clown-statuette",
+                "Estatuas/b60bd3/arjuna-wayang-golek-theatre-puppet",
+                "Estatuas/04b3d7/hawaiian-tiki-3dscan",
+                "Estatuas/f63cde/armadura-samurai-do-maru-bmvb"
+              ],
+              "intra_mean": 0.8819748163223267,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_1_size10_hard_01.png"
+            }
+          ]
+        },
+        {
+          "subpoolId": "Estatuas_2",
+          "sets": [
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/e1e2d9/anatomical-figure-ecorche",
+                "Estatuas/aa502a/tolerance-statue"
+              ],
+              "intra_mean": 0.9612843990325928,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_2_size2_hard_01.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/0d7c46/ehrengrab-johannes-benk",
+                "Estatuas/3c6fd9/el-pensador-artur-novoa-cabra"
+              ],
+              "intra_mean": 0.9125630855560303,
+              "hardness_pct": 66.3379286374366,
+              "easiness_pct": 33.662071362563395,
+              "viz_image": "Estatuas_sub_Estatuas_2_size2_hard_02.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/a183bd/spirit-of-life-sculpture",
+                "Estatuas/33c846/TheThinker"
+              ],
+              "intra_mean": 0.8768880367279053,
+              "hardness_pct": 41.68965965977509,
+              "easiness_pct": 58.31034034022491,
+              "viz_image": "Estatuas_sub_Estatuas_2_size2_easy_01.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/69102a/elven-ranger-statue",
+                "Estatuas/662d7e/PavlovLP"
+              ],
+              "intra_mean": 0.8165478706359863,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_2_size2_easy_02.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/69102a/elven-ranger-statue",
+                "Estatuas/e1e2d9/anatomical-figure-ecorche",
+                "Estatuas/aa502a/tolerance-statue",
+                "Estatuas/36c89e/ancient-titan-statue"
+              ],
+              "intra_mean": 0.896604597568512,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_2_size4_hard_01.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/a183bd/spirit-of-life-sculpture",
+                "Estatuas/0d7c46/ehrengrab-johannes-benk",
+                "Estatuas/c79033/neptune-louvre-museum",
+                "Estatuas/f63cde/armadura-samurai-do-maru-bmvb"
+              ],
+              "intra_mean": 0.8137290477752686,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_2_size4_easy_01.png"
+            },
+            {
+              "size": 6,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/c79033/neptune-louvre-museum",
+                "Estatuas/036bb5/aphrodite-of-milos-a-plaster-cast",
+                "Estatuas/662d7e/PavlovLP",
+                "Estatuas/0d7c46/ehrengrab-johannes-benk",
+                "Estatuas/3c6fd9/el-pensador-artur-novoa-cabra",
+                "Estatuas/33c846/TheThinker"
+              ],
+              "intra_mean": 0.8845590949058533,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_2_size6_hard_01.png"
+            },
+            {
+              "size": 6,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/662d7e/PavlovLP",
+                "Estatuas/f63cde/armadura-samurai-do-maru-bmvb",
+                "Estatuas/69102a/elven-ranger-statue",
+                "Estatuas/584e4d/beeld-van-maya-en-merit",
+                "Estatuas/4c8d6a/Greif",
+                "Estatuas/884718/songzi-niangniang-bamboo"
+              ],
+              "intra_mean": 0.7987302541732788,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_2_size6_easy_01.png"
+            },
+            {
+              "size": 6,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/c79033/neptune-louvre-museum",
+                "Estatuas/f63cde/armadura-samurai-do-maru-bmvb",
+                "Estatuas/36c89e/ancient-titan-statue",
+                "Estatuas/e5cb2b/embracing-peace",
+                "Estatuas/ef344a/christ-of-the-abyss",
+                "Estatuas/aa502a/tolerance-statue"
+              ],
+              "intra_mean": 0.8120684027671814,
+              "hardness_pct": 15.540403994808221,
+              "easiness_pct": 84.45959600519177,
+              "viz_image": "Estatuas_sub_Estatuas_2_size6_easy_02.png"
+            },
+            {
+              "size": 8,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/662d7e/PavlovLP",
+                "Estatuas/3c6fd9/el-pensador-artur-novoa-cabra",
+                "Estatuas/0d7c46/ehrengrab-johannes-benk",
+                "Estatuas/036bb5/aphrodite-of-milos-a-plaster-cast",
+                "Estatuas/c79033/neptune-louvre-museum",
+                "Estatuas/e1e2d9/anatomical-figure-ecorche",
+                "Estatuas/aa502a/tolerance-statue",
+                "Estatuas/33c846/TheThinker"
+              ],
+              "intra_mean": 0.8790679574012756,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_2_size8_hard_01.png"
+            },
+            {
+              "size": 8,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/662d7e/PavlovLP",
+                "Estatuas/f63cde/armadura-samurai-do-maru-bmvb",
+                "Estatuas/69102a/elven-ranger-statue",
+                "Estatuas/584e4d/beeld-van-maya-en-merit",
+                "Estatuas/4c8d6a/Greif",
+                "Estatuas/884718/songzi-niangniang-bamboo",
+                "Estatuas/e5cb2b/embracing-peace",
+                "Estatuas/36c89e/ancient-titan-statue"
+              ],
+              "intra_mean": 0.8149052858352661,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_2_size8_easy_01.png"
+            },
+            {
+              "size": 10,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/aa502a/tolerance-statue",
+                "Estatuas/826aae/Seine",
+                "Estatuas/8e7b22/PHILOPOEMEN",
+                "Estatuas/0d7c46/ehrengrab-johannes-benk",
+                "Estatuas/1cc272/bronze-moses-at-augustana-university",
+                "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+                "Estatuas/6782d8/the-punishment-a-study-of-farnese-hercules",
+                "Estatuas/a16e56/Zeuz",
+                "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+                "Estatuas/cf8d3a/EstatuaMercuri"
+              ],
+              "intra_mean": 0.9506939649581909,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_2_size10_hard_01.png"
+            },
+            {
+              "size": 10,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/ab46ee/Horse",
+                "Estatuas/08d22b/diane",
+                "Estatuas/98b0d7/Alessandro",
+                "Estatuas/e5cb2b/embracing-peace",
+                "Estatuas/cee624/Anchise",
+                "Estatuas/28b1d5/catalina-e-inscripcion-romana",
+                "Estatuas/319f1b/aphrodite-crouching-british-museum",
+                "Estatuas/1bfd4f/athena-3dst8",
+                "Estatuas/ac539e/beauty-and-the-beast-frymburk",
+                "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios"
+              ],
+              "intra_mean": 0.8551520705223083,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_2_size10_easy_01.png"
+            },
+            {
+              "size": 12,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/aa502a/tolerance-statue",
+                "Estatuas/8e7b22/PHILOPOEMEN",
+                "Estatuas/826aae/Seine",
+                "Estatuas/0d7c46/ehrengrab-johannes-benk",
+                "Estatuas/1cc272/bronze-moses-at-augustana-university",
+                "Estatuas/13e0fb/stone-griffin-downing-college-cambridge",
+                "Estatuas/6782d8/the-punishment-a-study-of-farnese-hercules",
+                "Estatuas/a16e56/Zeuz",
+                "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+                "Estatuas/cf8d3a/EstatuaMercuri",
+                "Estatuas/41b9e8/spartacus-louvre-museum",
+                "Estatuas/fb08a2/bishamonten-guardian-of-the-north"
+              ],
+              "intra_mean": 0.946647047996521,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_2_size12_hard_01.png"
+            },
+            {
+              "size": 12,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/ab46ee/Horse",
+                "Estatuas/08d22b/diane",
+                "Estatuas/98b0d7/Alessandro",
+                "Estatuas/e5cb2b/embracing-peace",
+                "Estatuas/cee624/Anchise",
+                "Estatuas/28b1d5/catalina-e-inscripcion-romana",
+                "Estatuas/319f1b/aphrodite-crouching-british-museum",
+                "Estatuas/1bfd4f/athena-3dst8",
+                "Estatuas/ac539e/beauty-and-the-beast-frymburk",
+                "Estatuas/75ec1a/sao-joao-de-deus-juan-de-dios",
+                "Estatuas/c25d0d/figure-of-a-dancer",
+                "Estatuas/e1e2d9/anatomical-figure-ecorche"
+              ],
+              "intra_mean": 0.8629831671714783,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_2_size12_easy_01.png"
+            }
+          ]
+        },
+        {
+          "subpoolId": "Estatuas_3",
+          "sets": [
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/cf8d3a/EstatuaMercuri",
+                "Estatuas/c25d0d/figure-of-a-dancer"
+              ],
+              "intra_mean": 0.9607806205749512,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_3_size2_hard_01.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+                "Estatuas/1bfd4f/athena-3dst8"
+              ],
+              "intra_mean": 0.9426071643829346,
+              "hardness_pct": 84.86878672383675,
+              "easiness_pct": 15.131213276163258,
+              "viz_image": "Estatuas_sub_Estatuas_3_size2_hard_02.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/a16e56/Zeuz",
+                "Estatuas/1cc272/bronze-moses-at-augustana-university"
+              ],
+              "intra_mean": 0.8713662624359131,
+              "hardness_pct": 25.553636652374145,
+              "easiness_pct": 74.44636334762585,
+              "viz_image": "Estatuas_sub_Estatuas_3_size2_easy_01.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/e330e2/HumanBody",
+                "Estatuas/826aae/Seine"
+              ],
+              "intra_mean": 0.840674877166748,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_3_size2_easy_02.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+                "Estatuas/1bfd4f/athena-3dst8",
+                "Estatuas/c25d0d/figure-of-a-dancer",
+                "Estatuas/cf8d3a/EstatuaMercuri"
+              ],
+              "intra_mean": 0.9148826599121094,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_3_size4_hard_01.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/826aae/Seine",
+                "Estatuas/1cc272/bronze-moses-at-augustana-university",
+                "Estatuas/6782d8/the-punishment-a-study-of-farnese-hercules",
+                "Estatuas/319f1b/aphrodite-crouching-british-museum"
+              ],
+              "intra_mean": 0.8992030024528503,
+              "hardness_pct": 86.77864185313422,
+              "easiness_pct": 13.22135814686578,
+              "viz_image": "Estatuas_sub_Estatuas_3_size4_hard_02.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/ac539e/beauty-and-the-beast-frymburk",
+                "Estatuas/6782d8/the-punishment-a-study-of-farnese-hercules",
+                "Estatuas/e330e2/HumanBody",
+                "Estatuas/98b0d7/Alessandro"
+              ],
+              "intra_mean": 0.7962892651557922,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_3_size4_easy_01.png"
+            },
+            {
+              "size": 6,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/cf8d3a/EstatuaMercuri",
+                "Estatuas/ac539e/beauty-and-the-beast-frymburk",
+                "Estatuas/a16e56/Zeuz",
+                "Estatuas/6d6fc8/1968212-terpsichore-lyran",
+                "Estatuas/1bfd4f/athena-3dst8",
+                "Estatuas/c25d0d/figure-of-a-dancer"
+              ],
+              "intra_mean": 0.9035173058509827,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_3_size6_hard_01.png"
+            },
+            {
+              "size": 6,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/ac539e/beauty-and-the-beast-frymburk",
+                "Estatuas/6782d8/the-punishment-a-study-of-farnese-hercules",
+                "Estatuas/e330e2/HumanBody",
+                "Estatuas/98b0d7/Alessandro",
+                "Estatuas/826aae/Seine",
+                "Estatuas/319f1b/aphrodite-crouching-british-museum"
+              ],
+              "intra_mean": 0.8176639080047607,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_3_size6_easy_01.png"
+            },
+            {
+              "size": 8,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/662d7e/PavlovLP",
+                "Estatuas/aa502a/tolerance-statue",
+                "Estatuas/1cc272/bronze-moses-at-augustana-university",
+                "Estatuas/0d7c46/ehrengrab-johannes-benk",
+                "Estatuas/47c25b/buddha-100k-vertices-decimation",
+                "Estatuas/826aae/Seine",
+                "Estatuas/98b0d7/Alessandro",
+                "Estatuas/6782d8/the-punishment-a-study-of-farnese-hercules"
+              ],
+              "intra_mean": 0.9675220251083374,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_3_size8_hard_01.png"
+            },
+            {
+              "size": 8,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/e330e2/HumanBody",
+                "Estatuas/c25d0d/figure-of-a-dancer",
+                "Estatuas/319f1b/aphrodite-crouching-british-museum",
+                "Estatuas/ac539e/beauty-and-the-beast-frymburk",
+                "Estatuas/e1e2d9/anatomical-figure-ecorche",
+                "Estatuas/7200e7/12th-c-ce-water-moon-guanyin",
+                "Estatuas/e5cb2b/embracing-peace",
+                "Estatuas/a16e56/Zeuz"
+              ],
+              "intra_mean": 0.9194261431694031,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_3_size8_easy_01.png"
+            },
+            {
+              "size": 10,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/ef344a/christ-of-the-abyss",
+                "Estatuas/662d7e/PavlovLP",
+                "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+                "Estatuas/584e4d/beeld-van-maya-en-merit",
+                "VehicleLike/80fe98/pietat-museu-frederic-mares",
+                "Estatuas/5a95c8/Sitzender",
+                "Estatuas/69102a/elven-ranger-statue",
+                "Estatuas/6fbe2c/lion-crushing-a-serpent",
+                "Estatuas/eaa469/skritek-wooden-statue",
+                "Estatuas/36c89e/ancient-titan-statue"
+              ],
+              "intra_mean": 0.901265561580658,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_3_size10_hard_01.png"
+            },
+            {
+              "size": 12,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/c79033/neptune-louvre-museum",
+                "Estatuas/69102a/elven-ranger-statue",
+                "Estatuas/36c89e/ancient-titan-statue",
+                "Estatuas/662d7e/PavlovLP",
+                "Estatuas/6fbe2c/lion-crushing-a-serpent",
+                "Estatuas/584e4d/beeld-van-maya-en-merit",
+                "Estatuas/5a95c8/Sitzender",
+                "VehicleLike/80fe98/pietat-museu-frederic-mares",
+                "Estatuas/096cff/aphrodite-crouching-at-her-bath-better",
+                "Estatuas/eaa469/skritek-wooden-statue",
+                "Estatuas/ef344a/christ-of-the-abyss",
+                "Estatuas/5daab3/netsuke-shoki-capturing-an-oni"
+              ],
+              "intra_mean": 0.8900051712989807,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_3_size12_hard_01.png"
+            }
+          ]
+        },
+        {
+          "subpoolId": "Estatuas_4",
+          "sets": [
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/7200e7/12th-c-ce-water-moon-guanyin",
+                "Estatuas/1fc9cc/seated-bodhisattva-guanyin-12th-c-ce"
+              ],
+              "intra_mean": 0.9573303461074829,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_4_size2_hard_01.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/8cfa03/lowe",
+                "Estatuas/9ded56/dwarf_02"
+              ],
+              "intra_mean": 0.9570397138595581,
+              "hardness_pct": 99.5163753942592,
+              "easiness_pct": 0.4836246057408067,
+              "viz_image": "Estatuas_sub_Estatuas_4_size2_hard_02.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/fc3b83/Hambuerguer",
+                "Estatuas/2a9402/tibetan-amoghasiddhi-buddha"
+              ],
+              "intra_mean": 0.8972357511520386,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_4_size2_easy_01.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/2a9402/tibetan-amoghasiddhi-buddha",
+                "Estatuas/7200e7/12th-c-ce-water-moon-guanyin",
+                "Estatuas/1fc9cc/seated-bodhisattva-guanyin-12th-c-ce",
+                "Estatuas/9ded56/dwarf_02"
+              ],
+              "intra_mean": 0.9483869671821594,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_4_size4_hard_01.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/2a9402/tibetan-amoghasiddhi-buddha",
+                "Estatuas/f71e1c/rhetorician",
+                "Estatuas/fc3b83/Hambuerguer",
+                "Estatuas/47c25b/buddha-100k-vertices-decimation"
+              ],
+              "intra_mean": 0.8641251921653748,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_4_size4_easy_01.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/f71e1c/rhetorician",
+                "Estatuas/7200e7/12th-c-ce-water-moon-guanyin",
+                "Estatuas/9c0ad5/dog",
+                "Estatuas/33c846/TheThinker"
+              ],
+              "intra_mean": 0.8859842419624329,
+              "hardness_pct": 25.941833996143394,
+              "easiness_pct": 74.05816600385661,
+              "viz_image": "Estatuas_sub_Estatuas_4_size4_easy_02.png"
+            },
+            {
+              "size": 6,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/7200e7/12th-c-ce-water-moon-guanyin",
+                "Estatuas/33c846/TheThinker",
+                "Estatuas/8cfa03/lowe",
+                "Estatuas/9ded56/dwarf_02",
+                "Estatuas/9c0ad5/dog",
+                "Estatuas/1fc9cc/seated-bodhisattva-guanyin-12th-c-ce"
+              ],
+              "intra_mean": 0.9422682523727417,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_4_size6_hard_01.png"
+            },
+            {
+              "size": 6,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/33c846/TheThinker",
+                "Estatuas/1fc9cc/seated-bodhisattva-guanyin-12th-c-ce",
+                "Estatuas/f71e1c/rhetorician",
+                "Estatuas/fc3b83/Hambuerguer",
+                "Estatuas/2a9402/tibetan-amoghasiddhi-buddha",
+                "Estatuas/47c25b/buddha-100k-vertices-decimation"
+              ],
+              "intra_mean": 0.8813714385032654,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_4_size6_easy_01.png"
+            },
+            {
+              "size": 8,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/2a9402/tibetan-amoghasiddhi-buddha",
+                "Estatuas/7200e7/12th-c-ce-water-moon-guanyin",
+                "Estatuas/1fc9cc/seated-bodhisattva-guanyin-12th-c-ce",
+                "Estatuas/9ded56/dwarf_02",
+                "Estatuas/9c0ad5/dog",
+                "Estatuas/8cfa03/lowe",
+                "Estatuas/33c846/TheThinker",
+                "Estatuas/47c25b/buddha-100k-vertices-decimation"
+              ],
+              "intra_mean": 0.9330516457557678,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_4_size8_hard_01.png"
+            },
+            {
+              "size": 10,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/f71e1c/rhetorician",
+                "Estatuas/33c846/TheThinker",
+                "Estatuas/8cfa03/lowe",
+                "Estatuas/9ded56/dwarf_02",
+                "Estatuas/9c0ad5/dog",
+                "Estatuas/47c25b/buddha-100k-vertices-decimation",
+                "Estatuas/7200e7/12th-c-ce-water-moon-guanyin",
+                "Estatuas/1fc9cc/seated-bodhisattva-guanyin-12th-c-ce",
+                "Estatuas/2a9402/tibetan-amoghasiddhi-buddha",
+                "Estatuas/fc3b83/Hambuerguer"
+              ],
+              "intra_mean": 0.908217191696167,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_4_size10_hard_01.png"
+            }
+          ]
+        },
+        {
+          "subpoolId": "Estatuas_5",
+          "sets": [
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/6fbe2c/lion-crushing-a-serpent",
+                "VehicleLike/80fe98/pietat-museu-frederic-mares"
+              ],
+              "intra_mean": 0.9468458890914917,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_5_size2_hard_01.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/6fbe2c/lion-crushing-a-serpent",
+                "VehicleLike/80fe98/pietat-museu-frederic-mares"
+              ],
+              "intra_mean": 0.9468458890914917,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_5_size2_easy_01.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/80433b/marly-louvre-museum",
+                "Estatuas/c0c012/mercure-monte-sur-pegase-louvre-museum",
+                "Estatuas/9a6d72/louis-xiv-de-france-louvre-paris",
+                "Estatuas/45d62f/rossbandiger"
+              ],
+              "intra_mean": 0.9650714993476868,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_5_size4_hard_01.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/7a19b0/artemis-fountain",
+                "Estatuas/f46600/mechanically-articulated-doll-a-man",
+                "Estatuas/be4451/hl-georg-als-drachentoter",
+                "Estatuas/e330e2/HumanBody"
+              ],
+              "intra_mean": 0.8688308596611023,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_5_size4_easy_01.png"
+            },
+            {
+              "size": 6,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/c0c012/mercure-monte-sur-pegase-louvre-museum",
+                "Estatuas/0b9ac1/equestrian-statue-of-napoleon",
+                "Estatuas/80433b/marly-louvre-museum",
+                "Estatuas/9a6d72/louis-xiv-de-france-louvre-paris",
+                "Estatuas/45d62f/rossbandiger",
+                "Estatuas/7a19b0/artemis-fountain"
+              ],
+              "intra_mean": 0.9502478241920471,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_5_size6_hard_01.png"
+            },
+            {
+              "size": 8,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/7a19b0/artemis-fountain",
+                "Estatuas/f46600/mechanically-articulated-doll-a-man",
+                "Estatuas/0b9ac1/equestrian-statue-of-napoleon",
+                "Estatuas/80433b/marly-louvre-museum",
+                "Estatuas/c0c012/mercure-monte-sur-pegase-louvre-museum",
+                "Estatuas/45d62f/rossbandiger",
+                "Estatuas/9a6d72/louis-xiv-de-france-louvre-paris",
+                "Estatuas/be4451/hl-georg-als-drachentoter"
+              ],
+              "intra_mean": 0.92902672290802,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_5_size8_hard_01.png"
+            }
+          ]
+        },
+        {
+          "subpoolId": "Estatuas_6",
+          "sets": [
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Estatuas/55ec64/valkyrie-sculpture",
+                "Estatuas/55e544/kusunoki-masashige-takamura-koun"
+              ],
+              "intra_mean": 0.9776961803436279,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Estatuas_sub_Estatuas_6_size2_hard_01.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "easy",
+              "group": [
+                "Estatuas/3bf9c0/elastolin-indian-horseman",
+                "Estatuas/55e544/kusunoki-masashige-takamura-koun"
+              ],
+              "intra_mean": 0.9180508852005005,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Estatuas_sub_Estatuas_6_size2_easy_01.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Guitarras",
+      "subpools": [
+        {
+          "subpoolId": "Guitarras_1",
+          "sets": [
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Guitarras/fb9151/Gibson",
+                "Guitarras/713d13/sg"
+              ],
+              "intra_mean": 0.9816493988037109,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Guitarras_sub_Guitarras_1_size2_hard_01.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "hard",
+              "group": [
+                "Guitarras/c29d1b/shark",
+                "Guitarras/b2dd86/metal"
+              ],
+              "intra_mean": 0.9696693420410156,
+              "hardness_pct": 87.59403601205834,
+              "easiness_pct": 12.405963987941659,
+              "viz_image": "Guitarras_sub_Guitarras_1_size2_hard_02.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "easy",
+              "group": [
+                "Guitarras/5bb02e/GuitarraSpider",
+                "Guitarras/fe033c/CriollaPulp"
+              ],
+              "intra_mean": 0.9503588676452637,
+              "hardness_pct": 67.59704812718039,
+              "easiness_pct": 32.40295187281961,
+              "viz_image": "Guitarras_sub_Guitarras_1_size2_easy_01.png"
+            },
+            {
+              "size": 2,
+              "difficulty": "easy",
+              "group": [
+                "Guitarras/fdfa33/feender",
+                "Prop/c74765/guitarhero"
+              ],
+              "intra_mean": 0.885082483291626,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Guitarras_sub_Guitarras_1_size2_easy_02.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "hard",
+              "group": [
+                "Guitarras/fb9151/Gibson",
+                "Guitarras/713d13/sg",
+                "Guitarras/5bb02e/GuitarraSpider",
+                "Prop/fbaffd/guitarraRara"
+              ],
+              "intra_mean": 0.9633287787437439,
+              "hardness_pct": 100.0,
+              "easiness_pct": 0.0,
+              "viz_image": "Guitarras_sub_Guitarras_1_size4_hard_01.png"
+            },
+            {
+              "size": 4,
+              "difficulty": "easy",
+              "group": [
+                "Guitarras/c29d1b/shark",
+                "Guitarras/fe033c/CriollaPulp",
+                "Guitarras/fdfa33/feender",
+                "Prop/c74765/guitarhero"
+              ],
+              "intra_mean": 0.9066874980926514,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Guitarras_sub_Guitarras_1_size4_easy_01.png"
+            },
+            {
+              "size": 6,
+              "difficulty": "hard",
+              "group": [
+                "Guitarras/fb9151/Gibson",
+                "Guitarras/fe033c/CriollaPulp",
+                "Guitarras/713d13/sg",
+                "Guitarras/5bb02e/GuitarraSpider",
+                "Prop/fbaffd/guitarraRara",
+                "Guitarras/fdfa33/feender"
+              ],
+              "intra_mean": 0.9428961277008057,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Guitarras_sub_Guitarras_1_size6_hard_01.png"
+            },
+            {
+              "size": 8,
+              "difficulty": "hard",
+              "group": [
+                "Guitarras/5bb02e/GuitarraSpider",
+                "Prop/c74765/guitarhero",
+                "Guitarras/fe033c/CriollaPulp",
+                "Guitarras/713d13/sg",
+                "Prop/fbaffd/guitarraRara",
+                "Guitarras/fb9151/Gibson",
+                "Guitarras/fdfa33/feender",
+                "Guitarras/b2dd86/metal"
+              ],
+              "intra_mean": 0.9294313192367554,
+              "hardness_pct": 0.0,
+              "easiness_pct": 100.0,
+              "viz_image": "Guitarras_sub_Guitarras_1_size8_hard_01.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Misc",
+      "subpools": []
+    }
+  ]
+}

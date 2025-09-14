@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f28884910ffafad40aebef363c26dbfa, type: 3}
+  m_Name: RoomInformation
+  m_EditorClassIdentifier: 
+  Maxcols: 7
+  cellSizeStandar: 2.9
+  wallHeight: 5
+  timeBetweenStandar: 10
+  unityPlaneSize: 10
+  espesor: 0.2
+  hallLightPrefab: {fileID: 6721314543282264862, guid: 1a35c234fcf552e46a846222f53be42c,
+    type: 3}
+  statueLightPrefab: {fileID: 4646495553044032154, guid: 828727e1b657f4d4dac5b108b457cb6a,
+    type: 3}
+  columnPool: {fileID: 11400000, guid: b206813b69e06db44b02d6eb4e8853f3, type: 2}
+  barrierPool: {fileID: 11400000, guid: 0f6c9d696ca5d884e87d353bcd84685b, type: 2}
+  doorPool: {fileID: 11400000, guid: f12928b5d6efe1d4fb5f334a9777af57, type: 2}
+  floorMat: {fileID: 11400000, guid: b3de413a3a4dbb542a2fb47616ae9512, type: 2}
+  wallMat: {fileID: 11400000, guid: 66ec85dafd1ebbe42a09e4343c91bf24, type: 2}
+  ceilingMat: {fileID: 11400000, guid: 12e88531f8f5d5f4eae7a00702381542, type: 2}
+  tileMat: {fileID: 11400000, guid: c26f0343f48ea894f99da595d7408d3d, type: 2}
+  poolGroup: {fileID: 11400000, guid: a0ff0d00de92f894bb5418bb7f81d8c9, type: 2}
+  desiredDoorSeparation: 4
+  padding: 1.7
+  centerYOffset: 0
+  desiredHeightMeters: 8
