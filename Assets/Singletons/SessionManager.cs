@@ -222,20 +222,126 @@ public class SessionManager : MonoBehaviour
         LogManager.Instance?.AddMarkerLog("InicioPartida", $"StartSession {SessionId} seed:{seed}", 0);
     }
 
+    // Dentro de SessionManager.cs (reemplaza tu AddTrial por este)
     public void AddTrial(TrialLog t)
     {
+        if (t == null) return;
+
+        // IDs / timestamps básicos
         if (string.IsNullOrEmpty(t.session_id)) t.session_id = this.SessionId;
         if (string.IsNullOrEmpty(t.participant_id)) t.participant_id = this.user?.Username ?? "unknown";
         if (string.IsNullOrEmpty(t.timestamp)) t.timestamp = DateTime.UtcNow.ToString("o");
-        if (string.IsNullOrEmpty(t.phase)) t.phase = "Test";
-        if (t.render_group == null) t.render_group = this.ChosenGroupIds.ToArray();
-        if (t.render_seed == 0) t.render_seed = this.RenderSeed;
 
+        // Phase: normalizar a token lowercase ("test", "study", etc.). Default "test"
+        t.phase = NormalizePhase(t.phase);
+
+        // Response: normalizar a "different" / "same" / "no_response"
+        t.response = NormalizeResponse(t.response);
+
+        // Similarity label: mapear etiquetas (español/inglés/mix) a canonical: "high","low","zero","target","foil",...
+        t.object_similarity_label = NormalizeSimilarityLabel(t.object_similarity_label);
+
+        // Tiempos: si vienen muy pequeños (<= TIME_SECONDS_THRESHOLD) asumimos que están en segundos -> convertir a ms
+        t.reaction_time_ms = NormalizeTimeMs(t.reaction_time_ms, "reaction_time_ms");
+        t.memorization_time_ms = NormalizeTimeMs(t.memorization_time_ms, "memorization_time_ms");
+
+        // Render defaults
+        if (t.render_group == null || t.render_group.Length == 0)
+            t.render_group = this.ChosenGroupIds?.ToArray() ?? new string[0];
+        if (t.render_seed == 0)
+            t.render_seed = this.RenderSeed;
+
+        // Guardar y encolar
         trials.Add(t);
-
-        // Encolar para envío crudo
         LogManager.Instance?.EnqueueTrial(t);
     }
+
+    ////////////////////////////////////////////////////////////////////////////////
+    // Helpers (añadir estos métodos privados dentro de SessionManager)
+    ////////////////////////////////////////////////////////////////////////////////
+
+    private const int TIME_SECONDS_THRESHOLD = 100; // <= 10 -> very likely seconds => convert to ms
+
+    private int NormalizeTimeMs(int timeValue, string fieldName = "")
+    {
+        // Preservar valores negativos (sin respuesta)
+        if (timeValue <= 0) return timeValue;
+
+        // Si el valor es pequeño (<= TIME_SECONDS_THRESHOLD) interpretamos que vino en segundos -> pasar a ms
+        if (timeValue <= TIME_SECONDS_THRESHOLD)
+        {
+            int ms = Mathf.RoundToInt(timeValue * 1000f);
+            Debug.Log($"[SessionManager] Converted {fieldName} from {timeValue} (s) -> {ms} ms (assumed seconds).");
+            return ms;
+        }
+
+        // Si ya es mayor a threshold, asumimos que está en ms y lo dejamos tal cual
+        return timeValue;
+    }
+
+    private string NormalizePhase(string raw)
+    {
+        if (string.IsNullOrEmpty(raw)) return "test";
+        var r = raw.Trim().ToLowerInvariant();
+        // normalizar valores comunes
+        if (r == "test" || r == "testing" || r == "testphase") return "test";
+        if (r == "study" || r == "studyphase" || r == "study_phase") return "study";
+        return r; // fallback: devolver lowercase
+    }
+
+    private string NormalizeResponse(string raw)
+    {
+        if (string.IsNullOrEmpty(raw)) return "no_response";
+        var r = raw.Trim().ToLowerInvariant();
+
+        // mapear variantes en español/inglés
+        if (r == "different" || r == "diff" || r == "diferente" || r == "distinto" || r.Contains("different") || r.Contains("difer")) return "different";
+        if (r == "same" || r == "igual" || r == "mismo" || r.Contains("same") || r.Contains("igual")) return "same";
+        if (r == "no_response" || r == "noresponse" || r == "no_response" || r == "no_res" || r == "no" || r == "none") return "no_response";
+
+        // si viene "true"/"false" en participant_said_moved, preferir inferir:
+        // (pero NO lo hacemos automáticamente aquí, mejor que el caller pase response explícito)
+
+        // fallback: devolver lower original (pero no vacío)
+        return r;
+    }
+
+    private string NormalizeSimilarityLabel(string raw)
+    {
+        if (string.IsNullOrEmpty(raw)) return "unknown";
+        var r = raw.Trim().ToLowerInvariant();
+
+        // mapear variantes en español/inglés a tokens canónicos
+        // HIGH
+        var highTokens = new HashSet<string> { "alta", "altasimilitud", "altasim", "high", "highsim", "alta_similitud", "alta-similitud" };
+        // LOW
+        var lowTokens = new HashSet<string> { "baja", "bajasimilitud", "low", "lowsim", "baja_similitud", "baja-similitud" };
+        // ZERO / NO SIM
+        var zeroTokens = new HashSet<string> { "nosemovio", "no_se_movio", "no_similitud", "nosimilitud", "no_sim", "none", "zero", "no" };
+        // TARGET / FOIL / LURE (si los usás)
+        var targetTokens = new HashSet<string> { "target", "targets", "targ" };
+        var foilTokens = new HashSet<string> { "foil", "foils" };
+        var lureTokens = new HashSet<string> { "lure", "lures" };
+
+        // normalize small variants (remove spaces/accents)
+        var r_clean = r.Replace(" ", "").Replace("-", "").Replace("_", "");
+
+        if (highTokens.Contains(r_clean) || highTokens.Contains(r)) return "high";
+        if (lowTokens.Contains(r_clean) || lowTokens.Contains(r)) return "low";
+        if (zeroTokens.Contains(r_clean) || zeroTokens.Contains(r)) return "zero";
+        if (targetTokens.Contains(r_clean) || targetTokens.Contains(r)) return "target";
+        if (foilTokens.Contains(r_clean) || foilTokens.Contains(r)) return "foil";
+        if (lureTokens.Contains(r_clean) || lureTokens.Contains(r)) return "lure";
+
+        // Additional heuristics: if contains words
+        if (r.Contains("alta") || r.Contains("high")) return "high";
+        if (r.Contains("baja") || r.Contains("low")) return "low";
+        if (r.Contains("no") || r.Contains("none") || r.Contains("nose")) return "zero";
+
+        // fallback: devolver lowercase original (documentar que es 'unknown' o el token original)
+        return r;
+    }
+
 
     public void EndSession()
     {
